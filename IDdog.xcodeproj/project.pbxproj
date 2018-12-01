@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		749F2CB0D31EF00F15FA9C4F /* Pods_IDdog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */; };
+		A9F0D6DFEDA6322DBA1E1F62 /* Pods_IDdogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */; };
 		BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */; };
 		BDCA25F121B33C1300E8C3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F021B33C1300E8C3FE /* ViewController.swift */; };
 		BDCA25F421B33C1300E8C3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F221B33C1300E8C3FE /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.release.xcconfig"; sourceTree = "<group>"; };
+		508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDCA25EB21B33C1300E8C3FE /* IDdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCA25F021B33C1300E8C3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		BDCA260221B33C1400E8C3FE /* IDdogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDdogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA260621B33C1400E8C3FE /* IDdogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDdogTests.swift; sourceTree = "<group>"; };
 		BDCA260821B33C1400E8C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
+		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749F2CB0D31EF00F15FA9C4F /* Pods_IDdog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F0D6DFEDA6322DBA1E1F62 /* Pods_IDdogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AB50D88B39E57B1FD2445A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */,
+				EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */,
+				755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */,
+				39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BDCA25E221B33C1200E8C3FE = {
 			isa = PBXGroup;
 			children = (
 				BDCA25ED21B33C1300E8C3FE /* IDdog */,
 				BDCA260521B33C1400E8C3FE /* IDdogTests */,
 				BDCA25EC21B33C1300E8C3FE /* Products */,
+				4AB50D88B39E57B1FD2445A9 /* Pods */,
+				E5027C8C1CEF8A72D8323FF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +122,15 @@
 			path = IDdogTests;
 			sourceTree = "<group>";
 		};
+		E5027C8C1CEF8A72D8323FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */,
+				12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDCA260B21B33C1400E8C3FE /* Build configuration list for PBXNativeTarget "IDdog" */;
 			buildPhases = (
+				0F5291CD2CB98989AE0007BF /* [CP] Check Pods Manifest.lock */,
 				BDCA25E721B33C1300E8C3FE /* Sources */,
 				BDCA25E821B33C1300E8C3FE /* Frameworks */,
 				BDCA25E921B33C1300E8C3FE /* Resources */,
@@ -123,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDCA260E21B33C1400E8C3FE /* Build configuration list for PBXNativeTarget "IDdogTests" */;
 			buildPhases = (
+				EF932B87BD573D061A13BDB2 /* [CP] Check Pods Manifest.lock */,
 				BDCA25FE21B33C1400E8C3FE /* Sources */,
 				BDCA25FF21B33C1400E8C3FE /* Frameworks */,
 				BDCA260021B33C1400E8C3FE /* Resources */,
@@ -194,6 +228,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F5291CD2CB98989AE0007BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDdog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF932B87BD573D061A13BDB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDdogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDCA25E721B33C1300E8C3FE /* Sources */ = {
@@ -362,6 +443,7 @@
 		};
 		BDCA260C21B33C1400E8C3FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +462,7 @@
 		};
 		BDCA260D21B33C1400E8C3FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +481,7 @@
 		};
 		BDCA260F21B33C1400E8C3FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +503,7 @@
 		};
 		BDCA261021B33C1400E8C3FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

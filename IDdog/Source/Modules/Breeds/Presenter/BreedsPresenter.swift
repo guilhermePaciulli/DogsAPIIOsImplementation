@@ -28,6 +28,8 @@ class BreedsPresenter: NSObject, BreedsPresenterInputProtocol, BreedsInteractorO
     }
     
     func loadBreeds() {
+        self.breeds = []
+        self.view.loadBreeds()
         self.view.showLoadingBreeds(loading: true, completion: {
             self.interactor.fetchBreeds()
         })

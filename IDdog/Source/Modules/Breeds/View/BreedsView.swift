@@ -18,6 +18,7 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDe
     
     // MARK: - Properties
     private var breedsCellReuseIdentifier = "breedCell"
+    private var indicator = UIActivityIndicatorView()
 
 	// MARK: - Override methods
 	override func viewDidLoad() {
@@ -25,6 +26,13 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDe
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        self.indicator = UIActivityIndicatorView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 40, height: 40)))
+        self.indicator.style = .gray
+        self.indicator.center = self.tableView.center
+        self.indicator.hidesWhenStopped = true
+        self.view.addSubview(indicator)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,13 +54,16 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDe
             alert.dismiss(animated: true)
         }))
         self.present(alert, animated: true)
-        
     }
     
     func showLoadingBreeds(loading: Bool, completion: @escaping () -> (Void)) {
+        if loading {
+            self.indicator.startAnimating()
+        } else {
+            self.indicator.stopAnimating()
+        }
+        completion()
     }
-
-	// MARK: - Private Methods
 
 }
 

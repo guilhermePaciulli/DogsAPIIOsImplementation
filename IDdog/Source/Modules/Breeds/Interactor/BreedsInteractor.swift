@@ -14,7 +14,8 @@ class BreedsInteractor: NSObject, BreedsInteractorInputProtocol {
     weak var output: BreedsInteractorOutputProtocol!
 
 	// MARK: - BreedsInteractorInputProtocol
-
-    // MARK: - Private Methods
+    func fetchBreeds() {
+        self.output.handleSuccessFetchedBreeds(with: DogsDAO.shared.fetchDogTypes())
+    }
 
 }

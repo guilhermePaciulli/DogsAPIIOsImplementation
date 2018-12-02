@@ -40,6 +40,8 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
         
         self.title = "Dogs that are " + self.presenter.dogBreedName()
         
+        self.presenter.fetchDogs()
+        
     }
 
     // MARK: - DogsPresenterOutputProtocol

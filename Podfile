@@ -7,6 +7,7 @@ target 'IDdog' do
 
   # Pods for IDdog
   pod 'Kingfisher', '~> 4.0'
+  pod 'ImageViewer'
 
   target 'IDdogTests' do
     inherit! :search_paths

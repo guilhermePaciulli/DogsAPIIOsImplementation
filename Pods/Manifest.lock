@@ -1,16 +1,20 @@
 PODS:
+  - ImageViewer (5.0.0)
   - Kingfisher (4.10.0)
 
 DEPENDENCIES:
+  - ImageViewer
   - Kingfisher (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ImageViewer
     - Kingfisher
 
 SPEC CHECKSUMS:
+  ImageViewer: 3def6e39c6979ce3e9d001c78eec0d8b895f2f73
   Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
 
-PODFILE CHECKSUM: 5d3b79da5c071409726bb3f9397431964f664398
+PODFILE CHECKSUM: eaa0e087167dba46239be347bf49dc19633a62f0
 
 COCOAPODS: 1.5.3

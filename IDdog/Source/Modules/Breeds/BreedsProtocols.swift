@@ -13,6 +13,7 @@ import UIKit
 protocol BreedsRouterProtocol: class {
     
     func present(with viewController: UIViewController)
+    func presentAsRoot(_ window: UIWindow)
     func moveToBreed(_ breed: DogBreed)
     
 }

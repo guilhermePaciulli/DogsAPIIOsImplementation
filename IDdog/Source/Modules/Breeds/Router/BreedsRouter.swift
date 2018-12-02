@@ -41,6 +41,11 @@ class BreedsRouter: NSObject, BreedsRouterProtocol {
         viewController.present(navigationController, animated: true, completion: nil)
     }
     
+    func presentAsRoot(_ window: UIWindow) {
+        let navigationController = UINavigationController(rootViewController: self.view)
+        window.rootViewController = navigationController
+    }
+    
     func moveToBreed(_ breed: DogBreed) {
     }
 

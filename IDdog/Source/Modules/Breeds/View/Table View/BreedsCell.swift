@@ -17,9 +17,9 @@ class BreedsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.breedCard.layer.cornerRadius = self.breedCard.frame.width / 15
+        self.breedCard.layer.cornerRadius = self.breedCard.frame.width / 30
         self.breedCard.clipsToBounds = true
-        self.breedCard.dropShadow(color: UIColor.black, opacity: 0.8, offSet: CGSize.zero, radius: 20, scale: true)
+        self.breedCard.dropShadow(color: #colorLiteral(red: 0.01960784314, green: 0.06274509804, blue: 0.07843137255, alpha: 1), opacity: 0.25, offSet: CGSize(width: 0, height: 5), radius: 5, scale: true, shouldFollowPath: false)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

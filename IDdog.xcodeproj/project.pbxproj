@@ -221,7 +221,7 @@
 			children = (
 				BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */,
 				BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */,
-				BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */,
+				BD65F2FD21B437C900A8DB61 /* Table View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +248,14 @@
 				BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD65F2FD21B437C900A8DB61 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */,
+			);
+			path = "Table View";
 			sourceTree = "<group>";
 		};
 		BDCA25E221B33C1200E8C3FE = {

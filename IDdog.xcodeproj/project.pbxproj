@@ -16,6 +16,8 @@
 		BD65F2D721B39F5300A8DB61 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */; };
 		BD65F2D821B39F5300A8DB61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D221B39F5300A8DB61 /* LoginView.swift */; };
 		BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */; };
+		BD65F2E421B4166D00A8DB61 /* LoginModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */; };
+		BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */; };
 		BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */; };
 		BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */; };
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		BD65F2D221B39F5300A8DB61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleTests.swift; sourceTree = "<group>"; };
+		BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		BDCA25EB21B33C1300E8C3FE /* IDdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCA25F621B33C1300E8C3FE /* IDdog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IDdog.xcdatamodel; sourceTree = "<group>"; };
@@ -156,6 +160,34 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		BD65F2DF21B415C000A8DB61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */,
+				BD65F2DB21B39F6800A8DB61 /* Router */,
+				BD65F2DC21B39F6E00A8DB61 /* Interactor */,
+				BD65F2DA21B39F6200A8DB61 /* Presenter */,
+				BD65F2D921B39F5D00A8DB61 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BD65F2E221B4165900A8DB61 /* Modules Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */,
+			);
+			path = "Modules Tests";
+			sourceTree = "<group>";
+		};
+		BD65F2E721B41F5B00A8DB61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BDCA25E221B33C1200E8C3FE = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +227,8 @@
 				BDCA260821B33C1400E8C3FE /* Info.plist */,
 				BDCA264221B3932200E8C3FE /* Request Tests */,
 				BDCA264B21B39A1300E8C3FE /* Data Access Objects Tests */,
+				BD65F2E221B4165900A8DB61 /* Modules Tests */,
+				BD65F2E721B41F5B00A8DB61 /* Utils */,
 			);
 			path = IDdogTests;
 			sourceTree = "<group>";
@@ -211,11 +245,7 @@
 		BDCA261221B33F8E00E8C3FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */,
-				BD65F2DB21B39F6800A8DB61 /* Router */,
-				BD65F2DC21B39F6E00A8DB61 /* Interactor */,
-				BD65F2DA21B39F6200A8DB61 /* Presenter */,
-				BD65F2D921B39F5D00A8DB61 /* View */,
+				BD65F2DF21B415C000A8DB61 /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -512,8 +542,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */,
+				BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */,
 				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,
 				BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */,
+				BD65F2E421B4166D00A8DB61 /* LoginModuleTests.swift in Sources */,
 				BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */,
 				BDCA264621B3937400E8C3FE /* UserDAOTests.swift in Sources */,
 			);

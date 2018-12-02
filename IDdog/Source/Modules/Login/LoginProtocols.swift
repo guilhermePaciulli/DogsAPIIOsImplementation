@@ -38,6 +38,6 @@ protocol LoginInteractorOutputProtocol: class {
 
 // MARK: - View
 protocol LoginPresenterOutputProtocol: class {
-    func showLoading(_ loading: Bool)
+    func showLoading(_ loading: Bool, completion: @escaping () -> (Void))
     func showError(message: String)
 }

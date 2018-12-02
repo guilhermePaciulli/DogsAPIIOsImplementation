@@ -24,16 +24,21 @@ class LoginView: UIViewController, LoginPresenterOutputProtocol {
 	override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.confirmButton.layer.cornerRadius = self.confirmButton.frame.width / 15
+        self.confirmButton.layer.cornerRadius = self.confirmButton.frame.width / 20
         self.confirmButton.clipsToBounds = true
+        
+        self.hideKeyboardWhenTappedAround()
     }
 
     // MARK: - LoginPresenterOutputProtocol
-    func showLoading(_ loading: Bool) {
+    func showLoading(_ loading: Bool, completion: @escaping () -> (Void)) {
         if loading {
             self.loadingViewController = self.showLoadingAlertView()
+            completion()
         } else {
-            self.loadingViewController?.dismiss(animated: true)
+            self.loadingViewController?.dismiss(animated: true, completion: {
+                completion()
+            })
         }
     }
     
@@ -47,8 +52,7 @@ class LoginView: UIViewController, LoginPresenterOutputProtocol {
     }
 
     @IBAction func didPressToConfirmButton(_ sender: Any) {
-    }
-    
-    // MARK: - Private Methods
+        self.presenter.createUser(with: self.emailTextField.text ?? "")
+    }    
 
 }

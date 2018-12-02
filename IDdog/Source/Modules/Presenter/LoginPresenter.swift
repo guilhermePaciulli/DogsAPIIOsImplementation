@@ -16,9 +16,30 @@ class LoginPresenter: NSObject, LoginPresenterInputProtocol, LoginInteractorOutp
     var router: LoginRouterProtocol!
 
     // MARK: - LoginPresenterInputProtocol
+    func createUser(with email: String) {
+        if self.isValidEmail(testStr: email) {
+            self.view.showLoading(true)
+            self.interactor.createUser(with: email)
+        } else {
+            self.view.showError(message: "Invalid email")
+        }
+    }
 
     // MARK: - LoginPresenterInteractorOutputProtocol
+    func handleSuccessLoggingInUser(with result: User) {
+        self.view.showLoading(false)
+        self.router.showDogsPage()
+    }
+    
+    func handleFailureLoggingInUser(with error: String) {
+        self.view.showLoading(false)
+        self.view.showError(message: error)
+    }
 
 	// MARK: - Private Methods
+    
+    private func isValidEmail(testStr:String) -> Bool {
+        return NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}").evaluate(with: testStr)
+    }
 
 }

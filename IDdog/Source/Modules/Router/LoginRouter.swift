@@ -36,6 +36,13 @@ class LoginRouter: NSObject, LoginRouterProtocol {
 	}
 
     // MARK: - LoginRouterProtocol
+    func presentAsRoot(_ window: UIWindow) {
+        window.rootViewController = self.view
+    }
+    
+    func showDogsPage() {
+        fatalError("Implementation not complete")
+    }
 
 	// MARK: - Private methods
 	private func viewControllerFromStoryboard() -> LoginView {

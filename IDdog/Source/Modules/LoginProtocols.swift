@@ -18,7 +18,6 @@ protocol LoginRouterProtocol: class {
 // MARK: - Interactor
 protocol LoginInteractorInputProtocol {
     
-    func attemptToLogin()
     func createUser(with email: String)
     
 }
@@ -26,9 +25,7 @@ protocol LoginInteractorInputProtocol {
 // MARK: - Presenter
 protocol LoginPresenterInputProtocol: class {
     
-    func attemptToLogin()
     func createUser(with email: String)
-    func showDogsPage()
 
 }
 

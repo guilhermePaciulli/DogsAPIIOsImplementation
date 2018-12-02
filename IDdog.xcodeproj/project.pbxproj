@@ -15,6 +15,7 @@
 		BD65F2D621B39F5300A8DB61 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */; };
 		BD65F2D721B39F5300A8DB61 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */; };
 		BD65F2D821B39F5300A8DB61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D221B39F5300A8DB61 /* LoginView.swift */; };
+		BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */; };
 		BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */; };
 		BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */; };
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		BD65F2D221B39F5300A8DB61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BDCA25EB21B33C1300E8C3FE /* IDdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCA25F621B33C1300E8C3FE /* IDdog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IDdog.xcdatamodel; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 		BDCA261621B3400900E8C3FE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				BDCA262C21B3774E00E8C3FE /* User.swift in Sources */,
 				BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */,
 				BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */,
+				BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */,
 				BD65F2D721B39F5300A8DB61 /* LoginInteractor.swift in Sources */,
 				BD65F2D621B39F5300A8DB61 /* LoginProtocols.swift in Sources */,
 				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,

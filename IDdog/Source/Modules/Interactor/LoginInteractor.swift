@@ -14,7 +14,18 @@ class LoginInteractor: NSObject, LoginInteractorInputProtocol {
     weak var output: LoginInteractorOutputProtocol!
 
 	// MARK: - LoginInteractorInputProtocol
-
-    // MARK: - Private Methods
+    
+    func createUser(with email: String) {
+        UserDAO.shared.createUser(with: email, completion: { result in
+            
+            switch result {
+            case .success(let user):
+                self.output.handleSuccessLoggingInUser(with: user)
+            case .failure(let error):
+                self.output.handleFailureLoggingInUser(with: error.message)
+            }
+            
+        })
+    }
 
 }

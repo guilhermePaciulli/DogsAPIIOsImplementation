@@ -27,6 +27,7 @@
 		BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA263721B37EAD00E8C3FE /* Main.storyboard */; };
 		BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */; };
 		BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */; };
+		BDCA264021B38F6500E8C3FE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		BDCA263721B37EAD00E8C3FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequestTest.swift; sourceTree = "<group>"; };
 		BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,8 +140,7 @@
 			children = (
 				BDCA260621B33C1400E8C3FE /* IDdogTests.swift */,
 				BDCA260821B33C1400E8C3FE /* Info.plist */,
-				BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */,
-				BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */,
+				BDCA264221B3932200E8C3FE /* Request Tests */,
 			);
 			path = IDdogTests;
 			sourceTree = "<group>";
@@ -176,6 +177,7 @@
 			children = (
 				BDCA263C21B38EFC00E8C3FE /* Data Access Objects */,
 				BDCA261D21B355CB00E8C3FE /* API Manager */,
+				BDCA264121B38F6900E8C3FE /* Manager */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,6 +235,23 @@
 				BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */,
 			);
 			path = "Data Access Objects";
+			sourceTree = "<group>";
+		};
+		BDCA264121B38F6900E8C3FE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BDCA264221B3932200E8C3FE /* Request Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */,
+				BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */,
+			);
+			path = "Request Tests";
 			sourceTree = "<group>";
 		};
 		E5027C8C1CEF8A72D8323FF5 /* Frameworks */ = {
@@ -394,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCA264021B38F6500E8C3FE /* KeychainManager.swift in Sources */,
 				BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */,
 				BDCA262121B357C600E8C3FE /* Result.swift in Sources */,
 				BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */,

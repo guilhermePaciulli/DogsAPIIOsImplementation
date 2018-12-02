@@ -18,6 +18,12 @@
 		BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */; };
 		BD65F2E421B4166D00A8DB61 /* LoginModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */; };
 		BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */; };
+		BD65F2EE21B42D5B00A8DB61 /* Breeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */; };
+		BD65F2EF21B42D5B00A8DB61 /* BreedsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E921B42D5B00A8DB61 /* BreedsPresenter.swift */; };
+		BD65F2F021B42D5B00A8DB61 /* BreedsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EA21B42D5B00A8DB61 /* BreedsRouter.swift */; };
+		BD65F2F121B42D5B00A8DB61 /* BreedsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */; };
+		BD65F2F221B42D5B00A8DB61 /* BreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */; };
+		BD65F2F321B42D5B00A8DB61 /* BreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */; };
 		BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */; };
 		BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */; };
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
@@ -66,6 +72,12 @@
 		BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleTests.swift; sourceTree = "<group>"; };
 		BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Breeds.storyboard; sourceTree = "<group>"; };
+		BD65F2E921B42D5B00A8DB61 /* BreedsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsPresenter.swift; sourceTree = "<group>"; };
+		BD65F2EA21B42D5B00A8DB61 /* BreedsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRouter.swift; sourceTree = "<group>"; };
+		BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsProtocols.swift; sourceTree = "<group>"; };
+		BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsInteractor.swift; sourceTree = "<group>"; };
+		BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsView.swift; sourceTree = "<group>"; };
 		BDCA25EB21B33C1300E8C3FE /* IDdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCA25F621B33C1300E8C3FE /* IDdog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IDdog.xcdatamodel; sourceTree = "<group>"; };
@@ -188,6 +200,51 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		BD65F2F421B42D5F00A8DB61 /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */,
+				BD65F2F721B42E8F00A8DB61 /* Router */,
+				BD65F2F821B42E9700A8DB61 /* Interactor */,
+				BD65F2F621B42E8A00A8DB61 /* Presenter */,
+				BD65F2F521B42E8500A8DB61 /* View */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		BD65F2F521B42E8500A8DB61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */,
+				BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD65F2F621B42E8A00A8DB61 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E921B42D5B00A8DB61 /* BreedsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD65F2F721B42E8F00A8DB61 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2EA21B42D5B00A8DB61 /* BreedsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD65F2F821B42E9700A8DB61 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		BDCA25E221B33C1200E8C3FE = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				BD65F2DF21B415C000A8DB61 /* Login */,
+				BD65F2F421B42D5F00A8DB61 /* Breeds */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -450,6 +508,7 @@
 				BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */,
 				BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */,
 				BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */,
+				BD65F2EE21B42D5B00A8DB61 /* Breeds.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +574,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCA264021B38F6500E8C3FE /* KeychainManager.swift in Sources */,
+				BD65F2F221B42D5B00A8DB61 /* BreedsInteractor.swift in Sources */,
+				BD65F2F021B42D5B00A8DB61 /* BreedsRouter.swift in Sources */,
 				BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */,
+				BD65F2F121B42D5B00A8DB61 /* BreedsProtocols.swift in Sources */,
 				BDCA262121B357C600E8C3FE /* Result.swift in Sources */,
 				BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */,
 				BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */,
@@ -528,10 +590,12 @@
 				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,
 				BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */,
 				BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */,
+				BD65F2F321B42D5B00A8DB61 /* BreedsView.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
 				BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */,
 				BDCA264A21B397C000E8C3FE /* DogsDAO.swift in Sources */,
 				BD65F2D821B39F5300A8DB61 /* LoginView.swift in Sources */,
+				BD65F2EF21B42D5B00A8DB61 /* BreedsPresenter.swift in Sources */,
 				BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */,
 				BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */,
 			);

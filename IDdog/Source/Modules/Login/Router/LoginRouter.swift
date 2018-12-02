@@ -41,7 +41,8 @@ class LoginRouter: NSObject, LoginRouterProtocol {
     }
     
     func showDogsPage() {
-//        fatalError("Implementation not complete")
+        let breedsRouter = BreedsRouter()
+        breedsRouter.present(with: self.view)
     }
 
 	// MARK: - Private methods

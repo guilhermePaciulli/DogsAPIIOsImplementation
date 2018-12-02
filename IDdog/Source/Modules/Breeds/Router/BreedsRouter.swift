@@ -36,12 +36,19 @@ class BreedsRouter: NSObject, BreedsRouterProtocol {
 	}
 
     // MARK: - BreedsRouterProtocol
+    func present(with viewController: UIViewController) {
+        let navigationController = UINavigationController(rootViewController: self.view)
+        viewController.present(navigationController, animated: true, completion: nil)
+    }
+    
+    func moveToBreed(_ breed: DogBreed) {
+    }
 
 	// MARK: - Private methods
 	private func viewControllerFromStoryboard() -> BreedsView {
 		let storyboard = UIStoryboard(name: self.storyBoardName, bundle: nil)
 		let viewController = storyboard.instantiateViewController(withIdentifier: self.viewIdentifier)
-
+        
 		return viewController as! BreedsView
 	}
 }

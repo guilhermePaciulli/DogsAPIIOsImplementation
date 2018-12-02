@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDelegate {
+class BreedsView: UIViewController, BreedsPresenterOutputProtocol {
 
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -65,6 +65,14 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDe
         completion()
     }
 
+}
+
+extension BreedsView: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.didSelectItem(at: indexPath)
+    }
+    
 }
 
 extension BreedsView: UITableViewDataSource {

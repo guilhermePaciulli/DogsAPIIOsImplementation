@@ -22,6 +22,7 @@
 		BDCA262C21B3774E00E8C3FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262B21B3774E00E8C3FE /* User.swift */; };
 		BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262D21B378C500E8C3FE /* DogRequest.swift */; };
 		BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262F21B3794800E8C3FE /* DogBreed.swift */; };
+		BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263121B37A6B00E8C3FE /* Dog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BDCA262B21B3774E00E8C3FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BDCA262D21B378C500E8C3FE /* DogRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
 		BDCA262F21B3794800E8C3FE /* DogBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		BDCA263121B37A6B00E8C3FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 				BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */,
 				BDCA262B21B3774E00E8C3FE /* User.swift */,
 				BDCA262F21B3794800E8C3FE /* DogBreed.swift */,
+				BDCA263121B37A6B00E8C3FE /* Dog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */,
 				BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */,
 				BDCA262C21B3774E00E8C3FE /* User.swift in Sources */,
+				BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */,
 				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
 				BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */,

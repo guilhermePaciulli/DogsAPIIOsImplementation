@@ -20,7 +20,7 @@ class DogRequest: APIRequest {
     
     var params: [String : String]?
     
-    typealias Response = User
+    typealias Response = Dog
     
     var breed: DogBreed
     

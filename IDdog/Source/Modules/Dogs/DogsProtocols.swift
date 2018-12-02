@@ -15,7 +15,7 @@ protocol DogsRouterProtocol: class {
     func push(to viewController: UIViewController)
     func showDogDetail(for dog: UIImage)
     
-    var category: DogBreed { get }
+    var category: DogBreed! { get }
 }
 
 // MARK: - Interactor

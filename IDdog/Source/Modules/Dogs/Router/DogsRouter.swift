@@ -9,16 +9,19 @@
 import UIKit
 
 class DogsRouter: NSObject, DogsRouterProtocol {
-
+    
 	// MARK: - Constants
 	private let storyBoardName = "Dogs"
 	private let viewIdentifier = "DogsView"
 
 	// MARK: - Viper Module Properties
 	weak var view: DogsView!
+    
+    // MARK: - Properties
+    var category: DogBreed!
 
 	// MARK: - Constructors
-	override init() {
+    init(withCategory breed: DogBreed) {
 		super.init()
 
 		let view = self.viewControllerFromStoryboard()
@@ -33,9 +36,16 @@ class DogsRouter: NSObject, DogsRouterProtocol {
 		interactor.output = presenter
 
 		self.view = view
+        self.category = breed
 	}
 
     // MARK: - DogsRouterProtocol
+    func push(to viewController: UIViewController) {
+        viewController.navigationController?.pushViewController(self.view, animated: true)
+    }
+    
+    func showDogDetail(for dog: UIImage) {
+    }
 
 	// MARK: - Private methods
 	private func viewControllerFromStoryboard() -> DogsView {

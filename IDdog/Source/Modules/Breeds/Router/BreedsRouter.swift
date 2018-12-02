@@ -47,6 +47,8 @@ class BreedsRouter: NSObject, BreedsRouterProtocol {
     }
     
     func moveToBreed(_ breed: DogBreed) {
+        let dogRouter = DogsRouter(withCategory: breed)
+        dogRouter.push(to: self.view)
     }
 
 	// MARK: - Private methods

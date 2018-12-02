@@ -14,7 +14,17 @@ class DogsInteractor: NSObject, DogsInteractorInputProtocol {
     weak var output: DogsInteractorOutputProtocol!
 
 	// MARK: - DogsInteractorInputProtocol
-
-    // MARK: - Private Methods
+    func fetchDogs(forCategory category: DogBreed) {
+        DogsDAO.shared.fetchDogs(fromBreed: category, completion: { result in
+            
+            switch result {
+            case .success(let dog):
+                self.output.handleSuccessFetchedDogs(with: dog)
+            case .failure(let error):
+                self.output.handleFailureFetchingDogs(with: error.message)
+            }
+            
+        })
+    }
 
 }

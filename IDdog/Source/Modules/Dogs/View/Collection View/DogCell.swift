@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DogCell: UICollectionViewCell {
     
@@ -22,8 +23,17 @@ class DogCell: UICollectionViewCell {
         self.dogCard.dropShadow(color: #colorLiteral(red: 0.01960784314, green: 0.06274509804, blue: 0.07843137255, alpha: 1), opacity: 0.25, offSet: CGSize(width: 0, height: 5), radius: 5, scale: true, shouldFollowPath: false)
     }
     
-    func setDog(image dogImage: UIImage) {
-        self.dogImage.image = dogImage
+    func setDog(image dogImageURL: URL?) {
+        if let dogImageURL = dogImageURL {
+            self.dogImage.kf.indicatorType = .activity
+            self.dogImage.kf.setImage(with: dogImageURL, completionHandler: { _, error, _, _ in
+                if error != nil {
+                    self.dogImage.image = #imageLiteral(resourceName: "wanted.png")
+                }
+            })
+        } else {
+            self.dogImage.image = #imageLiteral(resourceName: "wanted.png")
+        }
     }
     
 }

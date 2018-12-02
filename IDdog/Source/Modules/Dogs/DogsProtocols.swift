@@ -13,24 +13,24 @@ import UIKit
 protocol DogsRouterProtocol: class {
     
     func push(to viewController: UIViewController)
-    func showDogDetail(for dog: String)
-//    func backToBreedsView()
+    func showDogDetail(for dog: UIImage)
+    
+    var category: DogBreed { get }
 }
 
 // MARK: - Interactor
 protocol DogsInteractorInputProtocol {
-    func fetchDogs(forCategory category: String)
+    func fetchDogs(forCategory category: DogBreed)
 }
 
 // MARK: - Presenter
 protocol DogsPresenterInputProtocol: class {
     
     func fetchDogs()
-    func dogFor(_ indexPath: IndexPath) -> String
+    func dogForIndexPath(_ indexPath: IndexPath) -> URL?
+    func dogsForSection(_ section: Int) -> Int
     func numberOfSections() -> Int
-    func didSelectItem(at indexPath: IndexPath)
-    
-//    func backToBreedsView()
+    func didSelectDog(dogImage image: UIImage)
     
 }
 
@@ -43,8 +43,8 @@ protocol DogsInteractorOutputProtocol: class {
 
 // MARK: - View
 protocol DogsPresenterOutputProtocol: class {
-    func showError(with message: String, completion: @escaping () -> (Void))
-    func showLoadingDogs(_ loading: Bool)
+    func showError(with message: String)
+    func showLoadingDogs(_ loading: Bool, completion: @escaping () -> (Void))
     func reloadDogs()
     
 

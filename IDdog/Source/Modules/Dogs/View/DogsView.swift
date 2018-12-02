@@ -9,12 +9,17 @@
 import UIKit
 
 class DogsView: UIViewController, DogsPresenterOutputProtocol {
+    
 
     // MARK: - IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Viper Module Properties
 	var presenter: DogsPresenterInputProtocol!
+    
+    // MARK: - Properties
+    private var dogsCellReuseIdentifier = "dogCell"
+    private var indicator = UIActivityIndicatorView()
 
 	// MARK: - Override methods
 	override func viewDidLoad() {
@@ -22,6 +27,26 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
     }
 
     // MARK: - DogsPresenterOutputProtocol
+    func showError(with message: String) {
+        let alert = UIAlertController.init(title: "Warning", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "Ok", style: .default, handler: { _ in
+            alert.dismiss(animated: true)
+        }))
+        self.present(alert, animated: true)
+    }
+    
+    func showLoadingDogs(_ loading: Bool, completion: @escaping () -> (Void)) {
+        if loading {
+            self.indicator.startAnimating()
+        } else {
+            self.indicator.stopAnimating()
+        }
+        completion()
+    }
+    
+    func reloadDogs() {
+        self.collectionView.reloadData()
+    }
 
 	// MARK: - Private Methods
 
@@ -30,18 +55,31 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
 extension DogsView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: self.dogsCellReuseIdentifier, for: indexPath) as? DogCell {
+            self.presenter.didSelectDog(dogImage: cell.dogImage.image ?? #imageLiteral(resourceName: "wanted.png"))
+        }
     }
     
 }
 
 extension DogsView: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return self.presenter.numberOfSections()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return self.presenter.dogsForSection(section)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: self.dogsCellReuseIdentifier, for: indexPath) as? DogCell {
+            let dog = self.presenter.dogForIndexPath(indexPath)
+            cell.setDog(image: dog)
+            
+            return cell
+        }
+        return UICollectionViewCell()
     }
     
     

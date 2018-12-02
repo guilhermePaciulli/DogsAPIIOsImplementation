@@ -22,6 +22,7 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDe
 	// MARK: - Override methods
 	override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
@@ -37,6 +38,18 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol, UITableViewDe
     
     func loadBreeds() {
         self.tableView.reloadData()
+    }
+    
+    func showError(message: String) {
+        let alert = UIAlertController.init(title: "Warning", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "Ok", style: .default, handler: { _ in
+            alert.dismiss(animated: true)
+        }))
+        self.present(alert, animated: true)
+        
+    }
+    
+    func showLoadingBreeds(loading: Bool, completion: @escaping () -> (Void)) {
     }
 
 	// MARK: - Private Methods

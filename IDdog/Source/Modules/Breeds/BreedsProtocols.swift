@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - Router
 protocol BreedsRouterProtocol: class {
-
+    
+    func present(with viewController: UIViewController)
+    func moveToBreed(_ breed: DogBreed)
+    
 }
 
 // MARK: - Interactor
@@ -29,7 +33,7 @@ protocol BreedsPresenterInputProtocol: class {
     func loadBreeds()
     
     func item(at indexPath: IndexPath) -> DogBreed
-    func didSelectItem(at indexPath: Int)
+    func didSelectItem(at indexPath: IndexPath)
 
 }
 

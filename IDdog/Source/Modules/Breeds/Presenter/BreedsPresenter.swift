@@ -9,7 +9,6 @@
 import UIKit
 
 class BreedsPresenter: NSObject, BreedsPresenterInputProtocol, BreedsInteractorOutputProtocol {
-    
 
 	// MARK: - Viper Module Properties
     weak var view: BreedsPresenterOutputProtocol!
@@ -29,18 +28,34 @@ class BreedsPresenter: NSObject, BreedsPresenterInputProtocol, BreedsInteractorO
     }
     
     func loadBreeds() {
-//        sel
+        self.view.showLoadingBreeds(loading: true, completion: {
+            self.interactor.fetchBreeds()
+        })
     }
     
     func item(at indexPath: IndexPath) -> DogBreed {
-        <#code#>
+        return self.breeds[indexPath.row]
     }
     
-    func didSelectItem(at indexPath: Int) {
-        <#code#>
+    func didSelectItem(at indexPath: IndexPath) {
+        self.router.moveToBreed(self.breeds[indexPath.row])
     }
 
     // MARK: - BreedsPresenterInteractorOutputProtocol
+    func handleSuccessFetchedBreeds(with result: [DogBreed]) {
+        self.breeds = result
+        self.view.showLoadingBreeds(loading: false, completion: {
+            self.view.loadBreeds()
+        })
+    }
+    
+    func handleFailureBreedFetching(message: String) {
+        self.breeds = []
+        self.view.showLoadingBreeds(loading: false, completion: {
+            self.view.showError(message: message)
+            self.view.loadBreeds()
+        })
+    }
 
 	// MARK: - Private Methods
 

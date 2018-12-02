@@ -24,6 +24,8 @@
 		BD65F2F121B42D5B00A8DB61 /* BreedsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */; };
 		BD65F2F221B42D5B00A8DB61 /* BreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */; };
 		BD65F2F321B42D5B00A8DB61 /* BreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */; };
+		BD65F2FA21B42ED200A8DB61 /* BreedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */; };
+		BD65F2FC21B4304F00A8DB61 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2FB21B4304F00A8DB61 /* UIView+Extensions.swift */; };
 		BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */; };
 		BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */; };
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
@@ -78,6 +80,8 @@
 		BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsProtocols.swift; sourceTree = "<group>"; };
 		BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsInteractor.swift; sourceTree = "<group>"; };
 		BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsView.swift; sourceTree = "<group>"; };
+		BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsCell.swift; sourceTree = "<group>"; };
+		BD65F2FB21B4304F00A8DB61 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BDCA25EB21B33C1300E8C3FE /* IDdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCA25F621B33C1300E8C3FE /* IDdog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IDdog.xcdatamodel; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 			children = (
 				BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */,
 				BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */,
+				BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */,
+				BD65F2FB21B4304F00A8DB61 /* UIView+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -585,8 +591,10 @@
 				BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */,
 				BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */,
 				BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */,
+				BD65F2FC21B4304F00A8DB61 /* UIView+Extensions.swift in Sources */,
 				BD65F2D721B39F5300A8DB61 /* LoginInteractor.swift in Sources */,
 				BD65F2D621B39F5300A8DB61 /* LoginProtocols.swift in Sources */,
+				BD65F2FA21B42ED200A8DB61 /* BreedsCell.swift in Sources */,
 				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,
 				BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */,
 				BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */,

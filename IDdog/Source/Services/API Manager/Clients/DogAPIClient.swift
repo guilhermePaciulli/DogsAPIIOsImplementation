@@ -59,6 +59,10 @@ class DogAPIClient {
         urlRequest.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         urlRequest.setValue("no-cache", forHTTPHeaderField: "Cache-control")
         
+        if let user = UserDAO.shared.fetchUser() {
+            urlRequest.setValue(user.user.token, forHTTPHeaderField: "Authorization")
+        }
+        
         let jsonData = try? JSONEncoder().encode(request)
         urlRequest.httpBody = jsonData
 

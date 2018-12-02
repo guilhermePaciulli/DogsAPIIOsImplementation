@@ -29,6 +29,8 @@
 		BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */; };
 		BDCA264021B38F6500E8C3FE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */; };
 		BDCA264621B3937400E8C3FE /* UserDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA264521B3937400E8C3FE /* UserDAOTests.swift */; };
+		BDCA264A21B397C000E8C3FE /* DogsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA264921B397C000E8C3FE /* DogsDAO.swift */; };
+		BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA264C21B39A3200E8C3FE /* DogsDAOTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		BDCA264521B3937400E8C3FE /* UserDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAOTests.swift; sourceTree = "<group>"; };
+		BDCA264921B397C000E8C3FE /* DogsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsDAO.swift; sourceTree = "<group>"; };
+		BDCA264C21B39A3200E8C3FE /* DogsDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsDAOTests.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +147,7 @@
 				BDCA260621B33C1400E8C3FE /* IDdogTests.swift */,
 				BDCA260821B33C1400E8C3FE /* Info.plist */,
 				BDCA264221B3932200E8C3FE /* Request Tests */,
-				BDCA264521B3937400E8C3FE /* UserDAOTests.swift */,
+				BDCA264B21B39A1300E8C3FE /* Data Access Objects Tests */,
 			);
 			path = IDdogTests;
 			sourceTree = "<group>";
@@ -235,6 +239,7 @@
 		BDCA263C21B38EFC00E8C3FE /* Data Access Objects */ = {
 			isa = PBXGroup;
 			children = (
+				BDCA264921B397C000E8C3FE /* DogsDAO.swift */,
 				BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */,
 			);
 			path = "Data Access Objects";
@@ -255,6 +260,15 @@
 				BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */,
 			);
 			path = "Request Tests";
+			sourceTree = "<group>";
+		};
+		BDCA264B21B39A1300E8C3FE /* Data Access Objects Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA264521B3937400E8C3FE /* UserDAOTests.swift */,
+				BDCA264C21B39A3200E8C3FE /* DogsDAOTests.swift */,
+			);
+			path = "Data Access Objects Tests";
 			sourceTree = "<group>";
 		};
 		E5027C8C1CEF8A72D8323FF5 /* Frameworks */ = {
@@ -427,6 +441,7 @@
 				BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
 				BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */,
+				BDCA264A21B397C000E8C3FE /* DogsDAO.swift in Sources */,
 				BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */,
 				BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */,
 			);
@@ -436,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */,
 				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,
 				BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */,
 				BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */,

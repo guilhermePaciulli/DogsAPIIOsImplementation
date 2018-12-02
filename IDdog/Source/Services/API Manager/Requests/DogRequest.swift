@@ -26,6 +26,6 @@ class DogRequest: APIRequest {
     
     init(forBreed breed: DogBreed) {
         self.breed = breed
-        self.params = ["category": breed.breedName]
+        self.params = ["category": breed.breedName.lowercased()]
     }
 }

@@ -48,12 +48,25 @@ class DogsPresenter: NSObject, DogsPresenterInputProtocol, DogsInteractorOutputP
     func didSelectDog(dogImage image: UIImage) {
         self.router.showDogDetail(for: image)
     }
+    
+    func dogBreedName() -> String {
+        return self.router.category.breedName
+    }
 
     // MARK: - DogsPresenterInteractorOutputProtocol
     func handleSuccessFetchedDogs(with results: Dog) {
+        self.view.showLoadingDogs(false, completion: {
+            self.dogs = results
+            self.view.reloadDogs()
+        })
     }
     
     func handleFailureFetchingDogs(with message: String) {
+        self.view.showLoadingDogs(false, completion: {
+            self.dogs = nil
+            self.view.reloadDogs()
+            self.view.showError(with: message)
+        })
     }
 
 	// MARK: - Private Methods

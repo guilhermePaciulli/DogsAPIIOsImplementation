@@ -31,6 +31,7 @@ protocol DogsPresenterInputProtocol: class {
     func dogsForSection(_ section: Int) -> Int
     func numberOfSections() -> Int
     func didSelectDog(dogImage image: UIImage)
+    func dogBreedName() -> String
     
 }
 

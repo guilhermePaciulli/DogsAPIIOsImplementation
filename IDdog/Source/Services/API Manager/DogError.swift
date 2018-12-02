@@ -8,7 +8,6 @@
 
 import Foundation
 
-public enum DogError: Error {
-    case decoding
-    case server(message: String)
+struct DogError {
+    let message: String
 }

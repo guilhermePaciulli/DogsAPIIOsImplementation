@@ -14,25 +14,26 @@ class DogAPIClient {
     
     private let baseEndpointUrl = "https://api-iddog.idwall.co/"
     
-    private let session = URLSession()
+    private let session = URLSession(configuration: .default)
     
     private init() {}
     
     public func send<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<T.Response>) {
         
-        self.session.dataTask(with: self.request(for: request), completionHandler: { (data, response, error) in
+        let urlRequest = self.request(for: request)
+        self.session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             if let data = data {
                 
                 if let expectedResponse = try? JSONDecoder().decode(T.Response.self, from: data) {
                     completion(.success(expectedResponse))
-                } else if let serverError = try? JSONDecoder().decode(ServerError.self, from: data) {
-                    completion(.failure(DogError.server(message: serverError.message)))
+                } else if let serverError = try? JSONDecoder().decode(Error.self, from: data) {
+                    completion(.failure(DogError(message: serverError.error.message)))
                 } else {
-                    completion(.failure(DogError.decoding))
+                    completion(.failure(DogError(message: "There was an error communicating with the server")))
                 }
                 
-            } else if let error = error {
-                completion(.failure(error))
+            } else {
+                completion(.failure(DogError(message: "There was an internal server error")))
             }
             
             
@@ -41,7 +42,7 @@ class DogAPIClient {
     }
     
     private func request<T: APIRequest>(for request: T) -> URLRequest {
-        var stringURL = self.baseEndpointUrl + "/" + request.path
+        var stringURL = self.baseEndpointUrl + request.path
         
         if let params = request.params {
             for (key, value) in params {
@@ -65,7 +66,11 @@ class DogAPIClient {
         return urlRequest as URLRequest
     }
     
-    struct ServerError: Decodable {
+    struct Error: Codable {
+        let error: ErrorData
+    }
+    
+    struct ErrorData: Codable {
         let message: String
     }
         

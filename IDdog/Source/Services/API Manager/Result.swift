@@ -8,9 +8,9 @@
 
 import Foundation
 
-public enum Result<Value> {
+enum Result<Value> {
     case success(Value)
-    case failure(Error)
+    case failure(DogError)
 }
 
-public typealias ResultCallback<Value> = (Result<Value>) -> Void
+typealias ResultCallback<Value> = (Result<Value>) -> Void

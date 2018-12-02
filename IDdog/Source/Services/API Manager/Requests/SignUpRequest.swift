@@ -9,7 +9,7 @@
 import Foundation
 
 class SignUpRequest: APIRequest {
-    typealias Response = [User]
+    typealias Response = User
     
     var path: String {
         return "signup"

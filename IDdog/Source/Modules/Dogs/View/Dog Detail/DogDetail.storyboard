@@ -21,11 +21,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog404" translatesAutoresizingMaskIntoConstraints="NO" id="c06-r6-JIN">
                                 <rect key="frame" x="30" y="30" width="315" height="607"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-b4-RJu">
-                                <rect key="frame" x="302.5" y="40" width="52.5" height="52.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-b4-RJu">
+                                <rect key="frame" x="30" y="40" width="52.5" height="52.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KKd-b4-RJu" secondAttribute="height" multiplier="1:1" id="pPe-aN-2tr"/>
                                 </constraints>
+                                <state key="normal" image="dismiss"/>
                                 <connections>
                                     <action selector="didTouchToDismiss:" destination="RgB-MG-K3I" eventType="touchUpInside" id="eH8-VI-Lap"/>
                                 </connections>
@@ -36,7 +37,7 @@
                             <constraint firstItem="c06-r6-JIN" firstAttribute="leading" secondItem="NnG-vq-hKt" secondAttribute="leading" constant="30" id="6Gl-Q3-BOO"/>
                             <constraint firstItem="NnG-vq-hKt" firstAttribute="bottom" secondItem="c06-r6-JIN" secondAttribute="bottom" constant="30" id="88C-d2-yId"/>
                             <constraint firstItem="c06-r6-JIN" firstAttribute="top" secondItem="7Px-wk-DZg" secondAttribute="top" constant="30" id="Ep6-6g-kfP"/>
-                            <constraint firstItem="NnG-vq-hKt" firstAttribute="trailing" secondItem="KKd-b4-RJu" secondAttribute="trailing" constant="20" id="Fnf-17-MzH"/>
+                            <constraint firstItem="KKd-b4-RJu" firstAttribute="leading" secondItem="c06-r6-JIN" secondAttribute="leading" id="HYE-Me-jfM"/>
                             <constraint firstItem="KKd-b4-RJu" firstAttribute="top" secondItem="NnG-vq-hKt" secondAttribute="top" constant="20" id="Ydm-Qq-imj"/>
                             <constraint firstItem="KKd-b4-RJu" firstAttribute="width" secondItem="7Px-wk-DZg" secondAttribute="width" multiplier="0.14" id="uR5-B6-U8B"/>
                             <constraint firstItem="NnG-vq-hKt" firstAttribute="trailing" secondItem="c06-r6-JIN" secondAttribute="trailing" constant="30" id="wZA-Ah-He4"/>
@@ -53,6 +54,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dismiss" width="652" height="652"/>
         <image name="dog404" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
 </document>

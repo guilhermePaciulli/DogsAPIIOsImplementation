@@ -1,20 +1,20 @@
 PODS:
-  - ImageViewer (5.0.0)
-  - Kingfisher (4.10.0)
+  - ImageScrollView (1.7)
+  - Kingfisher (4.10.1)
 
 DEPENDENCIES:
-  - ImageViewer
+  - ImageScrollView
   - Kingfisher (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - ImageViewer
+    - ImageScrollView
     - Kingfisher
 
 SPEC CHECKSUMS:
-  ImageViewer: 3def6e39c6979ce3e9d001c78eec0d8b895f2f73
-  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  ImageScrollView: d5b262b71c6dbdb79999e931a1ffcb13246cb185
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
 
-PODFILE CHECKSUM: eaa0e087167dba46239be347bf49dc19633a62f0
+PODFILE CHECKSUM: bf0635d4d4d75f9fe65f2765d0dcc894ad2b5df9
 
 COCOAPODS: 1.5.3

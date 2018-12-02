@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ImageViewerVersionNumber;
-FOUNDATION_EXPORT const unsigned char ImageViewerVersionString[];
+FOUNDATION_EXPORT double ImageScrollViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char ImageScrollViewVersionString[];
 

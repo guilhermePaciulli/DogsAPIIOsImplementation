@@ -33,6 +33,12 @@ class BreedsView: UIViewController, BreedsPresenterOutputProtocol {
         self.indicator.hidesWhenStopped = true
         self.view.addSubview(indicator)
         
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.8470588235, green: 0, blue: 0.1529411765, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8470588235, green: 0, blue: 0.1529411765, alpha: 1)
+        self.navigationController?.navigationBar.barStyle = .black
     }
     
     override func viewWillAppear(_ animated: Bool) {

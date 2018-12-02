@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class DogsRouter: NSObject, DogsRouterProtocol {
     
@@ -46,9 +47,11 @@ class DogsRouter: NSObject, DogsRouterProtocol {
         viewController.navigationController?.pushViewController(self.view, animated: true)
     }
     
-    func showDogDetail(for dog: UIImage) {
+    func showDogDetail(for dog: UIImage, andHeroID id: String) {
         let imageScrollView = self.detailViewControllerFromStoryboard()
         imageScrollView.image = dog
+        imageScrollView.hero.isEnabled = true
+        imageScrollView.heroID = id
         self.view.present(imageScrollView, animated: true)
     }
 

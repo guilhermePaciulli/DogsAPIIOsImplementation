@@ -13,7 +13,7 @@ import UIKit
 protocol DogsRouterProtocol: class {
     
     func push(to viewController: UIViewController)
-    func showDogDetail(for dog: UIImage)
+    func showDogDetail(for dog: UIImage, andHeroID id: String)
     
     var category: DogBreed! { get }
 }
@@ -30,7 +30,7 @@ protocol DogsPresenterInputProtocol: class {
     func dogForIndexPath(_ indexPath: IndexPath) -> URL?
     func dogsForSection(_ section: Int) -> Int
     func numberOfSections() -> Int
-    func didSelectDog(dogImage image: UIImage)
+    func didSelectDog(at indexPath: IndexPath, andHeroID id: String)
     func dogBreedName() -> String
     
 }

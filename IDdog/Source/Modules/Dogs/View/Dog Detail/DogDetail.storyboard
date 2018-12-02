@@ -44,6 +44,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NnG-vq-hKt"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="imageView" destination="c06-r6-JIN" id="Tq2-d7-uVR"/>
                     </connections>

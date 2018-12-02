@@ -10,8 +10,12 @@ import UIKit
 
 class DogDetailView: UIViewController {
     
-    var image: UIImage!
+    // MARK: - IBOutlets
     @IBOutlet weak var imageView: UIImageView!
+    
+    // MARK: - Properties
+    var image: UIImage!
+    var heroID: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,7 @@ class DogDetailView: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.imageView.image = image
+        self.imageView.hero.id = self.heroID
     }
     
     @IBAction func didTouchToDismiss(_ sender: Any) {

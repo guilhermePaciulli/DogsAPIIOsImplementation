@@ -202,8 +202,8 @@
 			children = (
 				BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */,
 				BD5F7A1B21B44DAA00140F16 /* DogsView.swift */,
-				BD5F7A2E21B4606700140F16 /* Dog Detail */,
 				BD5F7A2921B44E2F00140F16 /* Collection View */,
+				BD5F7A2E21B4606700140F16 /* Dog Detail */,
 			);
 			path = View;
 			sourceTree = "<group>";

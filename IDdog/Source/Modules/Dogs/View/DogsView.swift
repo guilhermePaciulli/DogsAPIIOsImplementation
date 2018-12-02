@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class DogsView: UIViewController, DogsPresenterOutputProtocol {
     
@@ -75,8 +76,8 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
 extension DogsView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: self.dogsCellReuseIdentifier, for: indexPath) as? DogCell {
-            self.presenter.didSelectDog(dogImage: cell.dogImage.image ?? #imageLiteral(resourceName: "wanted.png"))
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.dogsCellReuseIdentifier, for: indexPath) as? DogCell {
+            self.presenter.didSelectDog(at: indexPath, andHeroID: "imageTransition\(indexPath.section)\(indexPath.row)")
         }
     }
     
@@ -95,7 +96,7 @@ extension DogsView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: self.dogsCellReuseIdentifier, for: indexPath) as? DogCell {
             let dog = self.presenter.dogForIndexPath(indexPath)
-            cell.setDog(image: dog)
+            cell.setDog(image: dog, withHeroID: "imageTransition\(indexPath.section)\(indexPath.row)")
             
             return cell
         }

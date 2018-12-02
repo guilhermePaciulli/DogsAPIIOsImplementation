@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DogsPresenter: NSObject, DogsPresenterInputProtocol, DogsInteractorOutputProtocol {
 
@@ -45,8 +46,17 @@ class DogsPresenter: NSObject, DogsPresenterInputProtocol, DogsInteractorOutputP
         return 1
     }
     
-    func didSelectDog(dogImage image: UIImage) {
-        self.router.showDogDetail(for: image)
+    func didSelectDog(at indexPath: IndexPath, andHeroID id: String) {
+        if let dogs = dogs, let urlImage = URL(string: dogs.list[indexPath.row]) {
+            UIImageView().kf.setImage(with: urlImage, completionHandler: { img, _, _, _ in
+                if let img = img {
+                    self.router.showDogDetail(for: img, andHeroID: id)
+                }
+                self.router.showDogDetail(for: UIImage(named: "dog404")!, andHeroID: id)
+            })
+        } else {
+            self.router.showDogDetail(for: UIImage(named: "dog404")!, andHeroID: id)
+        }
     }
     
     func dogBreedName() -> String {

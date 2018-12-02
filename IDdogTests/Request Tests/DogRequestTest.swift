@@ -12,7 +12,7 @@ import XCTest
 
 class DogRequestTest: XCTestCase {
     
-    override func tearDown() {
+    override func setUp() {
         UserDAO.shared.clearUserFromKeyChain()
     }
 

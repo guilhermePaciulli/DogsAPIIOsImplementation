@@ -18,6 +18,7 @@
 		BD5F7A2821B44E2B00140F16 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2721B44E2B00140F16 /* DogCell.swift */; };
 		BD5F7A2B21B45FDD00140F16 /* DogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */; };
 		BD5F7A2D21B4606000140F16 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2C21B4606000140F16 /* DogDetailView.swift */; };
+		BD5F7A3021B49CCE00140F16 /* BreedsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */; };
 		BD65F2D321B39F5300A8DB61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F2CD21B39F5300A8DB61 /* Login.storyboard */; };
 		BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */; };
 		BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */; };
@@ -83,6 +84,7 @@
 		BD5F7A2721B44E2B00140F16 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
 		BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogDetail.storyboard; sourceTree = "<group>"; };
 		BD5F7A2C21B4606000140F16 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
+		BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsModuleTests.swift; sourceTree = "<group>"; };
 		BD65F2CD21B39F5300A8DB61 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */,
+				BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */,
 			);
 			path = "Modules Tests";
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5F7A3021B49CCE00140F16 /* BreedsModuleTests.swift in Sources */,
 				BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */,
 				BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */,
 				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,

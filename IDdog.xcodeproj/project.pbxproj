@@ -14,6 +14,18 @@
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
 		BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25FA21B33C1400E8C3FE /* LaunchScreen.storyboard */; };
 		BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA260621B33C1400E8C3FE /* IDdogTests.swift */; };
+		BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA261A21B3555400E8C3FE /* APIRequest.swift */; };
+		BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */; };
+		BDCA262121B357C600E8C3FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262021B357C600E8C3FE /* Result.swift */; };
+		BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262221B35A3B00E8C3FE /* DogError.swift */; };
+		BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262621B375FD00E8C3FE /* SignUpRequest.swift */; };
+		BDCA262C21B3774E00E8C3FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262B21B3774E00E8C3FE /* User.swift */; };
+		BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262D21B378C500E8C3FE /* DogRequest.swift */; };
+		BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262F21B3794800E8C3FE /* DogBreed.swift */; };
+		BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263121B37A6B00E8C3FE /* Dog.swift */; };
+		BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */; };
+		BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA263721B37EAD00E8C3FE /* Main.storyboard */; };
+		BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,18 @@
 		BDCA260221B33C1400E8C3FE /* IDdogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDdogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA260621B33C1400E8C3FE /* IDdogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDdogTests.swift; sourceTree = "<group>"; };
 		BDCA260821B33C1400E8C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDCA261A21B3555400E8C3FE /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIClient.swift; sourceTree = "<group>"; };
+		BDCA262021B357C600E8C3FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BDCA262221B35A3B00E8C3FE /* DogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogError.swift; sourceTree = "<group>"; };
+		BDCA262621B375FD00E8C3FE /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		BDCA262B21B3774E00E8C3FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDCA262D21B378C500E8C3FE /* DogRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
+		BDCA262F21B3794800E8C3FE /* DogBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		BDCA263121B37A6B00E8C3FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestTest.swift; sourceTree = "<group>"; };
+		BDCA263721B37EAD00E8C3FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequestTest.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +124,7 @@
 			children = (
 				BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */,
 				BDCA25FA21B33C1400E8C3FE /* LaunchScreen.storyboard */,
+				BDCA263721B37EAD00E8C3FE /* Main.storyboard */,
 				BDCA261121B33F8300E8C3FE /* Resources */,
 				BDCA261521B33FDA00E8C3FE /* Source */,
 			);
@@ -111,6 +136,8 @@
 			children = (
 				BDCA260621B33C1400E8C3FE /* IDdogTests.swift */,
 				BDCA260821B33C1400E8C3FE /* Info.plist */,
+				BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */,
+				BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */,
 			);
 			path = IDdogTests;
 			sourceTree = "<group>";
@@ -135,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */,
+				BDCA262B21B3774E00E8C3FE /* User.swift */,
+				BDCA262F21B3794800E8C3FE /* DogBreed.swift */,
+				BDCA263121B37A6B00E8C3FE /* Dog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +172,7 @@
 		BDCA261421B33FBF00E8C3FE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BDCA261D21B355CB00E8C3FE /* API Manager */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,10 +180,10 @@
 		BDCA261521B33FDA00E8C3FE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				BDCA261621B3400900E8C3FE /* Utils */,
 				BDCA261321B33FB600E8C3FE /* Models */,
 				BDCA261221B33F8E00E8C3FE /* Modules */,
 				BDCA261421B33FBF00E8C3FE /* Services */,
+				BDCA261621B3400900E8C3FE /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -162,6 +193,35 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BDCA261721B354E200E8C3FE /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261A21B3555400E8C3FE /* APIRequest.swift */,
+				BDCA262621B375FD00E8C3FE /* SignUpRequest.swift */,
+				BDCA262D21B378C500E8C3FE /* DogRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		BDCA261921B354EE00E8C3FE /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		BDCA261D21B355CB00E8C3FE /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA262021B357C600E8C3FE /* Result.swift */,
+				BDCA262221B35A3B00E8C3FE /* DogError.swift */,
+				BDCA261921B354EE00E8C3FE /* Clients */,
+				BDCA261721B354E200E8C3FE /* Requests */,
+			);
+			path = "API Manager";
 			sourceTree = "<group>";
 		};
 		E5027C8C1CEF8A72D8323FF5 /* Frameworks */ = {
@@ -256,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */,
 				BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */,
 				BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */,
 			);
@@ -323,7 +384,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */,
+				BDCA262121B357C600E8C3FE /* Result.swift in Sources */,
+				BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */,
+				BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */,
+				BDCA262C21B3774E00E8C3FE /* User.swift in Sources */,
+				BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */,
+				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
+				BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */,
+				BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */,
+				BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,
 				BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */,
+				BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +552,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = IDdog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +571,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = IDdog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

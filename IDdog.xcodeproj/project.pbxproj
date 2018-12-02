@@ -14,6 +14,10 @@
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
 		BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25FA21B33C1400E8C3FE /* LaunchScreen.storyboard */; };
 		BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA260621B33C1400E8C3FE /* IDdogTests.swift */; };
+		BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA261A21B3555400E8C3FE /* APIRequest.swift */; };
+		BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */; };
+		BDCA262121B357C600E8C3FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262021B357C600E8C3FE /* Result.swift */; };
+		BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262221B35A3B00E8C3FE /* DogError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		BDCA260221B33C1400E8C3FE /* IDdogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDdogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA260621B33C1400E8C3FE /* IDdogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDdogTests.swift; sourceTree = "<group>"; };
 		BDCA260821B33C1400E8C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDCA261A21B3555400E8C3FE /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIClient.swift; sourceTree = "<group>"; };
+		BDCA262021B357C600E8C3FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BDCA262221B35A3B00E8C3FE /* DogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogError.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +150,7 @@
 		BDCA261421B33FBF00E8C3FE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BDCA261D21B355CB00E8C3FE /* API Controller */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,10 +158,10 @@
 		BDCA261521B33FDA00E8C3FE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				BDCA261621B3400900E8C3FE /* Utils */,
 				BDCA261321B33FB600E8C3FE /* Models */,
 				BDCA261221B33F8E00E8C3FE /* Modules */,
 				BDCA261421B33FBF00E8C3FE /* Services */,
+				BDCA261621B3400900E8C3FE /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -162,6 +171,33 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BDCA261721B354E200E8C3FE /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261A21B3555400E8C3FE /* APIRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		BDCA261921B354EE00E8C3FE /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		BDCA261D21B355CB00E8C3FE /* API Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA262021B357C600E8C3FE /* Result.swift */,
+				BDCA262221B35A3B00E8C3FE /* DogError.swift */,
+				BDCA261921B354EE00E8C3FE /* Clients */,
+				BDCA261721B354E200E8C3FE /* Requests */,
+			);
+			path = "API Controller";
 			sourceTree = "<group>";
 		};
 		E5027C8C1CEF8A72D8323FF5 /* Frameworks */ = {
@@ -323,7 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */,
+				BDCA262121B357C600E8C3FE /* Result.swift in Sources */,
+				BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */,
+				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
+				BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = IDdog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = IDdog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

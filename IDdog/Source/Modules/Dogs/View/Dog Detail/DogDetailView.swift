@@ -7,17 +7,21 @@
 //
 
 import UIKit
-import ImageScrollView
 
 class DogDetailView: UIViewController {
-
-    @IBOutlet var imageScrollView: ImageScrollView!
+    
+    var image: UIImage!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.imageView.image = image
+    }
     
-    func setScroll(toImage image: UIImage) {
-        self.imageScrollView.display(image: image)
+    @IBAction func didTouchToDismiss(_ sender: Any) {
+        self.dismiss(animated: true)
     }
 }

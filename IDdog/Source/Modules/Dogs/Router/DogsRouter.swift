@@ -48,7 +48,7 @@ class DogsRouter: NSObject, DogsRouterProtocol {
     
     func showDogDetail(for dog: UIImage) {
         let imageScrollView = self.detailViewControllerFromStoryboard()
-        imageScrollView.setScroll(toImage: dog)
+        imageScrollView.image = dog
         self.view.present(imageScrollView, animated: true)
     }
 

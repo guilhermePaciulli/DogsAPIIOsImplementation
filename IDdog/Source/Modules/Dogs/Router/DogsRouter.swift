@@ -13,6 +13,8 @@ class DogsRouter: NSObject, DogsRouterProtocol {
 	// MARK: - Constants
 	private let storyBoardName = "Dogs"
 	private let viewIdentifier = "DogsView"
+    private let detailViewStoryboardName = "DogDetail"
+    private let detailViewIdentifier = "DogDetailView"
 
 	// MARK: - Viper Module Properties
 	weak var view: DogsView!
@@ -45,6 +47,9 @@ class DogsRouter: NSObject, DogsRouterProtocol {
     }
     
     func showDogDetail(for dog: UIImage) {
+        let imageScrollView = self.detailViewControllerFromStoryboard()
+        imageScrollView.setScroll(toImage: dog)
+        self.view.present(imageScrollView, animated: true)
     }
 
 	// MARK: - Private methods
@@ -54,4 +59,11 @@ class DogsRouter: NSObject, DogsRouterProtocol {
 
 		return viewController as! DogsView
 	}
+    
+    private func detailViewControllerFromStoryboard() -> DogDetailView {
+        let storyboard = UIStoryboard(name: self.detailViewStoryboardName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: self.detailViewIdentifier)
+        
+        return viewController as! DogDetailView
+    }
 }

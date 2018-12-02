@@ -16,6 +16,8 @@
 		BD5F7A2021B44DAA00140F16 /* DogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1A21B44DAA00140F16 /* DogsInteractor.swift */; };
 		BD5F7A2121B44DAA00140F16 /* DogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1B21B44DAA00140F16 /* DogsView.swift */; };
 		BD5F7A2821B44E2B00140F16 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2721B44E2B00140F16 /* DogCell.swift */; };
+		BD5F7A2B21B45FDD00140F16 /* DogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */; };
+		BD5F7A2D21B4606000140F16 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2C21B4606000140F16 /* DogDetailView.swift */; };
 		BD65F2D321B39F5300A8DB61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F2CD21B39F5300A8DB61 /* Login.storyboard */; };
 		BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */; };
 		BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */; };
@@ -79,6 +81,8 @@
 		BD5F7A1A21B44DAA00140F16 /* DogsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsInteractor.swift; sourceTree = "<group>"; };
 		BD5F7A1B21B44DAA00140F16 /* DogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsView.swift; sourceTree = "<group>"; };
 		BD5F7A2721B44E2B00140F16 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogDetail.storyboard; sourceTree = "<group>"; };
+		BD5F7A2C21B4606000140F16 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
 		BD65F2CD21B39F5300A8DB61 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -161,8 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				BD5F7A1921B44DAA00140F16 /* DogsProtocols.swift */,
-				BD5F7A2521B44DEA00140F16 /* Interactor */,
 				BD5F7A2421B44DE500140F16 /* Router */,
+				BD5F7A2521B44DEA00140F16 /* Interactor */,
 				BD5F7A2321B44DDB00140F16 /* Presenter */,
 				BD5F7A2621B44DF400140F16 /* View */,
 			);
@@ -198,6 +202,7 @@
 			children = (
 				BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */,
 				BD5F7A1B21B44DAA00140F16 /* DogsView.swift */,
+				BD5F7A2E21B4606700140F16 /* Dog Detail */,
 				BD5F7A2921B44E2F00140F16 /* Collection View */,
 			);
 			path = View;
@@ -209,6 +214,15 @@
 				BD5F7A2721B44E2B00140F16 /* DogCell.swift */,
 			);
 			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		BD5F7A2E21B4606700140F16 /* Dog Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */,
+				BD5F7A2C21B4606000140F16 /* DogDetailView.swift */,
+			);
+			path = "Dog Detail";
 			sourceTree = "<group>";
 		};
 		BD65F2D921B39F5D00A8DB61 /* View */ = {
@@ -590,6 +604,7 @@
 			files = (
 				BD65F2D321B39F5300A8DB61 /* Login.storyboard in Resources */,
 				BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */,
+				BD5F7A2B21B45FDD00140F16 /* DogDetail.storyboard in Resources */,
 				BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */,
 				BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */,
 				BD65F2EE21B42D5B00A8DB61 /* Breeds.storyboard in Resources */,
@@ -706,6 +721,7 @@
 				BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */,
 				BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */,
 				BD65F2F321B42D5B00A8DB61 /* BreedsView.swift in Sources */,
+				BD5F7A2D21B4606000140F16 /* DogDetailView.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
 				BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */,
 				BDCA264A21B397C000E8C3FE /* DogsDAO.swift in Sources */,

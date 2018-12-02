@@ -18,7 +18,7 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
 	var presenter: DogsPresenterInputProtocol!
     
     // MARK: - Properties
-    private var dogsCellReuseIdentifier = "dogCell"
+    private var dogsCellReuseIdentifier = "DogCell"
     private var indicator = UIActivityIndicatorView()
 
 	// MARK: - Override methods
@@ -32,13 +32,13 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.8470588235, green: 0, blue: 0.1529411765, alpha: 1)
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8470588235, green: 0, blue: 0.1529411765, alpha: 1)
-        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.tintColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.title = "Dogs that are " + self.presenter.dogBreedName()
+        self.title = self.presenter.dogBreedName()
         
         self.presenter.fetchDogs()
         
@@ -54,12 +54,14 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
     }
     
     func showLoadingDogs(_ loading: Bool, completion: @escaping () -> (Void)) {
-        if loading {
-            self.indicator.startAnimating()
-        } else {
-            self.indicator.stopAnimating()
+        DispatchQueue.main.async {
+            if loading {
+                self.indicator.startAnimating()
+            } else {
+                self.indicator.stopAnimating()
+            }
+            completion()
         }
-        completion()
     }
     
     func reloadDogs() {

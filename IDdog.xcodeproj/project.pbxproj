@@ -25,6 +25,7 @@
 		BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263121B37A6B00E8C3FE /* Dog.swift */; };
 		BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */; };
 		BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA263721B37EAD00E8C3FE /* Main.storyboard */; };
+		BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BDCA263121B37A6B00E8C3FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestTest.swift; sourceTree = "<group>"; };
 		BDCA263721B37EAD00E8C3FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequestTest.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 				BDCA260621B33C1400E8C3FE /* IDdogTests.swift */,
 				BDCA260821B33C1400E8C3FE /* Info.plist */,
 				BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */,
+				BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */,
 			);
 			path = IDdogTests;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,
 				BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */,
 				BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */,
 			);

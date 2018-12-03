@@ -1,4 +1,4 @@
-# IDDogChallenge
+# DogsAPI iOS Implementation
 ## Final project on master branch
 ---
 Technologies: 

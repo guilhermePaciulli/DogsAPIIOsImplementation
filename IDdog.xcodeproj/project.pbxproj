@@ -19,6 +19,7 @@
 		BD5F7A2B21B45FDD00140F16 /* DogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */; };
 		BD5F7A2D21B4606000140F16 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2C21B4606000140F16 /* DogDetailView.swift */; };
 		BD5F7A3021B49CCE00140F16 /* BreedsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */; };
+		BD5F7A3221B4A20500140F16 /* DogsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A3121B4A20500140F16 /* DogsModuleTests.swift */; };
 		BD65F2D321B39F5300A8DB61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F2CD21B39F5300A8DB61 /* Login.storyboard */; };
 		BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */; };
 		BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */; };
@@ -85,6 +86,7 @@
 		BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogDetail.storyboard; sourceTree = "<group>"; };
 		BD5F7A2C21B4606000140F16 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
 		BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsModuleTests.swift; sourceTree = "<group>"; };
+		BD5F7A3121B4A20500140F16 /* DogsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsModuleTests.swift; sourceTree = "<group>"; };
 		BD65F2CD21B39F5300A8DB61 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			children = (
 				BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */,
 				BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */,
+				BD5F7A3121B4A20500140F16 /* DogsModuleTests.swift */,
 			);
 			path = "Modules Tests";
 			sourceTree = "<group>";
@@ -532,7 +535,7 @@
 				BDCA25E721B33C1300E8C3FE /* Sources */,
 				BDCA25E821B33C1300E8C3FE /* Frameworks */,
 				BDCA25E921B33C1300E8C3FE /* Resources */,
-				41DD647475D0411B2D61A415 /* [CP] Embed Pods Frameworks */,
+				DDA65F635945C33E8E200C26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -647,7 +650,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		41DD647475D0411B2D61A415 /* [CP] Embed Pods Frameworks */ = {
+		DDA65F635945C33E8E200C26 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -742,6 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD5F7A3021B49CCE00140F16 /* BreedsModuleTests.swift in Sources */,
+				BD5F7A3221B4A20500140F16 /* DogsModuleTests.swift in Sources */,
 				BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */,
 				BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */,
 				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,

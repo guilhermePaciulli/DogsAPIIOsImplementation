@@ -20,7 +20,7 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
     
     // MARK: - Properties
     private var dogsCellReuseIdentifier = "DogCell"
-    private var indicator = UIActivityIndicatorView()
+    private var indicator: UIActivityIndicatorView!
 
 	// MARK: - Override methods
 	override func viewDidLoad() {
@@ -34,6 +34,8 @@ class DogsView: UIViewController, DogsPresenterOutputProtocol {
         self.navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.8470588235, green: 0, blue: 0.1529411765, alpha: 1)
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8470588235, green: 0, blue: 0.1529411765, alpha: 1)
         self.navigationController?.navigationBar.tintColor = .white
+        
+        self.indicator = UIActivityIndicatorView()
     }
     
     override func viewWillAppear(_ animated: Bool) {

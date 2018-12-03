@@ -18,19 +18,8 @@ class BreedsModuleTests: XCTestCase {
     }
     
     override func setUp() {
-//        let expectation = self.expectation(description: "wait to create user")
-//        UserDAO.shared.createUser(with: "testing@test.com", completion: { _ in
-//            expectation.fulfill()
-//        })
-//
-//        self.waitForExpectations(timeout: 5)
-        
         self.router = BreedsRouter()
         self.router.presentAsRoot(UIApplication.shared.keyWindow!)
-    }
-
-    override func tearDown() {
-//        UserDAO.shared.clearUserFromKeyChain()
     }
 
     func testFetchingBreeds() {

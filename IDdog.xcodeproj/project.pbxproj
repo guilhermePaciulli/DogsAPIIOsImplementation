@@ -9,13 +9,56 @@
 /* Begin PBXBuildFile section */
 		749F2CB0D31EF00F15FA9C4F /* Pods_IDdog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */; };
 		A9F0D6DFEDA6322DBA1E1F62 /* Pods_IDdogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */; };
+		BD5F7A1C21B44DAA00140F16 /* Dogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */; };
+		BD5F7A1D21B44DAA00140F16 /* DogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1721B44DAA00140F16 /* DogsPresenter.swift */; };
+		BD5F7A1E21B44DAA00140F16 /* DogsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1821B44DAA00140F16 /* DogsRouter.swift */; };
+		BD5F7A1F21B44DAA00140F16 /* DogsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1921B44DAA00140F16 /* DogsProtocols.swift */; };
+		BD5F7A2021B44DAA00140F16 /* DogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1A21B44DAA00140F16 /* DogsInteractor.swift */; };
+		BD5F7A2121B44DAA00140F16 /* DogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1B21B44DAA00140F16 /* DogsView.swift */; };
+		BD5F7A2821B44E2B00140F16 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2721B44E2B00140F16 /* DogCell.swift */; };
+		BD5F7A2B21B45FDD00140F16 /* DogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */; };
+		BD5F7A2D21B4606000140F16 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2C21B4606000140F16 /* DogDetailView.swift */; };
+		BD5F7A3021B49CCE00140F16 /* BreedsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */; };
+		BD5F7A3221B4A20500140F16 /* DogsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A3121B4A20500140F16 /* DogsModuleTests.swift */; };
+		BD65F2D321B39F5300A8DB61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F2CD21B39F5300A8DB61 /* Login.storyboard */; };
+		BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */; };
+		BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */; };
+		BD65F2D621B39F5300A8DB61 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */; };
+		BD65F2D721B39F5300A8DB61 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */; };
+		BD65F2D821B39F5300A8DB61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2D221B39F5300A8DB61 /* LoginView.swift */; };
+		BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */; };
+		BD65F2E421B4166D00A8DB61 /* LoginModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */; };
+		BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */; };
+		BD65F2EE21B42D5B00A8DB61 /* Breeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */; };
+		BD65F2EF21B42D5B00A8DB61 /* BreedsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2E921B42D5B00A8DB61 /* BreedsPresenter.swift */; };
+		BD65F2F021B42D5B00A8DB61 /* BreedsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EA21B42D5B00A8DB61 /* BreedsRouter.swift */; };
+		BD65F2F121B42D5B00A8DB61 /* BreedsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */; };
+		BD65F2F221B42D5B00A8DB61 /* BreedsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */; };
+		BD65F2F321B42D5B00A8DB61 /* BreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */; };
+		BD65F2FA21B42ED200A8DB61 /* BreedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */; };
+		BD65F2FC21B4304F00A8DB61 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F2FB21B4304F00A8DB61 /* UIView+Extensions.swift */; };
 		BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */; };
-		BDCA25F121B33C1300E8C3FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F021B33C1300E8C3FE /* ViewController.swift */; };
-		BDCA25F421B33C1300E8C3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F221B33C1300E8C3FE /* Main.storyboard */; };
 		BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */; };
 		BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25F821B33C1400E8C3FE /* Assets.xcassets */; };
 		BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA25FA21B33C1400E8C3FE /* LaunchScreen.storyboard */; };
 		BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA260621B33C1400E8C3FE /* IDdogTests.swift */; };
+		BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA261A21B3555400E8C3FE /* APIRequest.swift */; };
+		BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */; };
+		BDCA262121B357C600E8C3FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262021B357C600E8C3FE /* Result.swift */; };
+		BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262221B35A3B00E8C3FE /* DogError.swift */; };
+		BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262621B375FD00E8C3FE /* SignUpRequest.swift */; };
+		BDCA262C21B3774E00E8C3FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262B21B3774E00E8C3FE /* User.swift */; };
+		BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262D21B378C500E8C3FE /* DogRequest.swift */; };
+		BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA262F21B3794800E8C3FE /* DogBreed.swift */; };
+		BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263121B37A6B00E8C3FE /* Dog.swift */; };
+		BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */; };
+		BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCA263721B37EAD00E8C3FE /* Main.storyboard */; };
+		BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */; };
+		BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */; };
+		BDCA264021B38F6500E8C3FE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */; };
+		BDCA264621B3937400E8C3FE /* UserDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA264521B3937400E8C3FE /* UserDAOTests.swift */; };
+		BDCA264A21B397C000E8C3FE /* DogsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA264921B397C000E8C3FE /* DogsDAO.swift */; };
+		BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA264C21B39A3200E8C3FE /* DogsDAOTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +76,36 @@
 		39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.release.xcconfig"; sourceTree = "<group>"; };
 		508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dogs.storyboard; sourceTree = "<group>"; };
+		BD5F7A1721B44DAA00140F16 /* DogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPresenter.swift; sourceTree = "<group>"; };
+		BD5F7A1821B44DAA00140F16 /* DogsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRouter.swift; sourceTree = "<group>"; };
+		BD5F7A1921B44DAA00140F16 /* DogsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsProtocols.swift; sourceTree = "<group>"; };
+		BD5F7A1A21B44DAA00140F16 /* DogsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsInteractor.swift; sourceTree = "<group>"; };
+		BD5F7A1B21B44DAA00140F16 /* DogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsView.swift; sourceTree = "<group>"; };
+		BD5F7A2721B44E2B00140F16 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogDetail.storyboard; sourceTree = "<group>"; };
+		BD5F7A2C21B4606000140F16 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
+		BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsModuleTests.swift; sourceTree = "<group>"; };
+		BD5F7A3121B4A20500140F16 /* DogsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsModuleTests.swift; sourceTree = "<group>"; };
+		BD65F2CD21B39F5300A8DB61 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		BD65F2D221B39F5300A8DB61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleTests.swift; sourceTree = "<group>"; };
+		BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Breeds.storyboard; sourceTree = "<group>"; };
+		BD65F2E921B42D5B00A8DB61 /* BreedsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsPresenter.swift; sourceTree = "<group>"; };
+		BD65F2EA21B42D5B00A8DB61 /* BreedsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRouter.swift; sourceTree = "<group>"; };
+		BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsProtocols.swift; sourceTree = "<group>"; };
+		BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsInteractor.swift; sourceTree = "<group>"; };
+		BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsView.swift; sourceTree = "<group>"; };
+		BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsCell.swift; sourceTree = "<group>"; };
+		BD65F2FB21B4304F00A8DB61 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BDCA25EB21B33C1300E8C3FE /* IDdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDCA25F021B33C1300E8C3FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BDCA25F321B33C1300E8C3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDCA25F621B33C1300E8C3FE /* IDdog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IDdog.xcdatamodel; sourceTree = "<group>"; };
 		BDCA25F821B33C1400E8C3FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDCA25FB21B33C1400E8C3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +113,23 @@
 		BDCA260221B33C1400E8C3FE /* IDdogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDdogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCA260621B33C1400E8C3FE /* IDdogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDdogTests.swift; sourceTree = "<group>"; };
 		BDCA260821B33C1400E8C3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDCA261A21B3555400E8C3FE /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIClient.swift; sourceTree = "<group>"; };
+		BDCA262021B357C600E8C3FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BDCA262221B35A3B00E8C3FE /* DogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogError.swift; sourceTree = "<group>"; };
+		BDCA262621B375FD00E8C3FE /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		BDCA262B21B3774E00E8C3FE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDCA262D21B378C500E8C3FE /* DogRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
+		BDCA262F21B3794800E8C3FE /* DogBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		BDCA263121B37A6B00E8C3FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestTest.swift; sourceTree = "<group>"; };
+		BDCA263721B37EAD00E8C3FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRequestTest.swift; sourceTree = "<group>"; };
+		BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		BDCA264521B3937400E8C3FE /* UserDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAOTests.swift; sourceTree = "<group>"; };
+		BDCA264921B397C000E8C3FE /* DogsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsDAO.swift; sourceTree = "<group>"; };
+		BDCA264C21B39A3200E8C3FE /* DogsDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsDAOTests.swift; sourceTree = "<group>"; };
 		EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.release.xcconfig"; sourceTree = "<group>"; };
 		F56B02D3CCCB61FB0E829AE7 /* Pods-IDdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdog/Pods-IDdog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +165,187 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BD5F7A2221B44DAD00140F16 /* Dogs */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A1921B44DAA00140F16 /* DogsProtocols.swift */,
+				BD5F7A2421B44DE500140F16 /* Router */,
+				BD5F7A2521B44DEA00140F16 /* Interactor */,
+				BD5F7A2321B44DDB00140F16 /* Presenter */,
+				BD5F7A2621B44DF400140F16 /* View */,
+			);
+			path = Dogs;
+			sourceTree = "<group>";
+		};
+		BD5F7A2321B44DDB00140F16 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A1721B44DAA00140F16 /* DogsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD5F7A2421B44DE500140F16 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A1821B44DAA00140F16 /* DogsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD5F7A2521B44DEA00140F16 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A1A21B44DAA00140F16 /* DogsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD5F7A2621B44DF400140F16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */,
+				BD5F7A1B21B44DAA00140F16 /* DogsView.swift */,
+				BD5F7A2921B44E2F00140F16 /* Collection View */,
+				BD5F7A2E21B4606700140F16 /* Dog Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD5F7A2921B44E2F00140F16 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A2721B44E2B00140F16 /* DogCell.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		BD5F7A2E21B4606700140F16 /* Dog Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F7A2A21B45FDD00140F16 /* DogDetail.storyboard */,
+				BD5F7A2C21B4606000140F16 /* DogDetailView.swift */,
+			);
+			path = "Dog Detail";
+			sourceTree = "<group>";
+		};
+		BD65F2D921B39F5D00A8DB61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2CD21B39F5300A8DB61 /* Login.storyboard */,
+				BD65F2D221B39F5300A8DB61 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD65F2DA21B39F6200A8DB61 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2CE21B39F5300A8DB61 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD65F2DB21B39F6800A8DB61 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2CF21B39F5300A8DB61 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD65F2DC21B39F6E00A8DB61 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2D121B39F5300A8DB61 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD65F2DF21B415C000A8DB61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2D021B39F5300A8DB61 /* LoginProtocols.swift */,
+				BD65F2DB21B39F6800A8DB61 /* Router */,
+				BD65F2DC21B39F6E00A8DB61 /* Interactor */,
+				BD65F2DA21B39F6200A8DB61 /* Presenter */,
+				BD65F2D921B39F5D00A8DB61 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BD65F2E221B4165900A8DB61 /* Modules Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E321B4166D00A8DB61 /* LoginModuleTests.swift */,
+				BD5F7A2F21B49CCE00140F16 /* BreedsModuleTests.swift */,
+				BD5F7A3121B4A20500140F16 /* DogsModuleTests.swift */,
+			);
+			path = "Modules Tests";
+			sourceTree = "<group>";
+		};
+		BD65F2E721B41F5B00A8DB61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E521B41F5600A8DB61 /* UIApplication+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD65F2F421B42D5F00A8DB61 /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2EB21B42D5B00A8DB61 /* BreedsProtocols.swift */,
+				BD65F2F721B42E8F00A8DB61 /* Router */,
+				BD65F2F821B42E9700A8DB61 /* Interactor */,
+				BD65F2F621B42E8A00A8DB61 /* Presenter */,
+				BD65F2F521B42E8500A8DB61 /* View */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		BD65F2F521B42E8500A8DB61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E821B42D5B00A8DB61 /* Breeds.storyboard */,
+				BD65F2ED21B42D5B00A8DB61 /* BreedsView.swift */,
+				BD65F2FD21B437C900A8DB61 /* Table View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD65F2F621B42E8A00A8DB61 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2E921B42D5B00A8DB61 /* BreedsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD65F2F721B42E8F00A8DB61 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2EA21B42D5B00A8DB61 /* BreedsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD65F2F821B42E9700A8DB61 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2EC21B42D5B00A8DB61 /* BreedsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD65F2FD21B437C900A8DB61 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2F921B42ED200A8DB61 /* BreedsCell.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
 		BDCA25E221B33C1200E8C3FE = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +370,10 @@
 			isa = PBXGroup;
 			children = (
 				BDCA25EE21B33C1300E8C3FE /* AppDelegate.swift */,
-				BDCA25F021B33C1300E8C3FE /* ViewController.swift */,
-				BDCA25F221B33C1300E8C3FE /* Main.storyboard */,
-				BDCA25F821B33C1400E8C3FE /* Assets.xcassets */,
 				BDCA25FA21B33C1400E8C3FE /* LaunchScreen.storyboard */,
-				BDCA25FD21B33C1400E8C3FE /* Info.plist */,
-				BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */,
+				BDCA263721B37EAD00E8C3FE /* Main.storyboard */,
+				BDCA261121B33F8300E8C3FE /* Resources */,
+				BDCA261521B33FDA00E8C3FE /* Source */,
 			);
 			path = IDdog;
 			sourceTree = "<group>";
@@ -118,8 +383,136 @@
 			children = (
 				BDCA260621B33C1400E8C3FE /* IDdogTests.swift */,
 				BDCA260821B33C1400E8C3FE /* Info.plist */,
+				BDCA264221B3932200E8C3FE /* Request Tests */,
+				BDCA264B21B39A1300E8C3FE /* Data Access Objects Tests */,
+				BD65F2E221B4165900A8DB61 /* Modules Tests */,
+				BD65F2E721B41F5B00A8DB61 /* Utils */,
 			);
 			path = IDdogTests;
+			sourceTree = "<group>";
+		};
+		BDCA261121B33F8300E8C3FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA25F821B33C1400E8C3FE /* Assets.xcassets */,
+				BDCA25FD21B33C1400E8C3FE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BDCA261221B33F8E00E8C3FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2DF21B415C000A8DB61 /* Login */,
+				BD65F2F421B42D5F00A8DB61 /* Breeds */,
+				BD5F7A2221B44DAD00140F16 /* Dogs */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BDCA261321B33FB600E8C3FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA25F521B33C1300E8C3FE /* IDdog.xcdatamodeld */,
+				BDCA262B21B3774E00E8C3FE /* User.swift */,
+				BDCA262F21B3794800E8C3FE /* DogBreed.swift */,
+				BDCA263121B37A6B00E8C3FE /* Dog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDCA261421B33FBF00E8C3FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA263C21B38EFC00E8C3FE /* Data Access Objects */,
+				BDCA261D21B355CB00E8C3FE /* API Manager */,
+				BDCA264121B38F6900E8C3FE /* Manager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDCA261521B33FDA00E8C3FE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261321B33FB600E8C3FE /* Models */,
+				BDCA261221B33F8E00E8C3FE /* Modules */,
+				BDCA261421B33FBF00E8C3FE /* Services */,
+				BDCA261621B3400900E8C3FE /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BDCA261621B3400900E8C3FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F2DD21B3A87F00A8DB61 /* UIViewController+Extension.swift */,
+				BD65F2FB21B4304F00A8DB61 /* UIView+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BDCA261721B354E200E8C3FE /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261A21B3555400E8C3FE /* APIRequest.swift */,
+				BDCA262621B375FD00E8C3FE /* SignUpRequest.swift */,
+				BDCA262D21B378C500E8C3FE /* DogRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		BDCA261921B354EE00E8C3FE /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA261E21B3567E00E8C3FE /* DogAPIClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		BDCA261D21B355CB00E8C3FE /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA262021B357C600E8C3FE /* Result.swift */,
+				BDCA262221B35A3B00E8C3FE /* DogError.swift */,
+				BDCA261921B354EE00E8C3FE /* Clients */,
+				BDCA261721B354E200E8C3FE /* Requests */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		BDCA263C21B38EFC00E8C3FE /* Data Access Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA264921B397C000E8C3FE /* DogsDAO.swift */,
+				BDCA263D21B38F0F00E8C3FE /* UserDAO.swift */,
+			);
+			path = "Data Access Objects";
+			sourceTree = "<group>";
+		};
+		BDCA264121B38F6900E8C3FE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA263F21B38F6500E8C3FE /* KeychainManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BDCA264221B3932200E8C3FE /* Request Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA263521B37B3D00E8C3FE /* SignUpRequestTest.swift */,
+				BDCA263921B389BC00E8C3FE /* DogRequestTest.swift */,
+			);
+			path = "Request Tests";
+			sourceTree = "<group>";
+		};
+		BDCA264B21B39A1300E8C3FE /* Data Access Objects Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDCA264521B3937400E8C3FE /* UserDAOTests.swift */,
+				BDCA264C21B39A3200E8C3FE /* DogsDAOTests.swift */,
+			);
+			path = "Data Access Objects Tests";
 			sourceTree = "<group>";
 		};
 		E5027C8C1CEF8A72D8323FF5 /* Frameworks */ = {
@@ -142,6 +535,7 @@
 				BDCA25E721B33C1300E8C3FE /* Sources */,
 				BDCA25E821B33C1300E8C3FE /* Frameworks */,
 				BDCA25E921B33C1300E8C3FE /* Resources */,
+				DDA65F635945C33E8E200C26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,9 +608,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD65F2D321B39F5300A8DB61 /* Login.storyboard in Resources */,
+				BDCA263821B37EAD00E8C3FE /* Main.storyboard in Resources */,
+				BD5F7A2B21B45FDD00140F16 /* DogDetail.storyboard in Resources */,
 				BDCA25FC21B33C1400E8C3FE /* LaunchScreen.storyboard in Resources */,
 				BDCA25F921B33C1400E8C3FE /* Assets.xcassets in Resources */,
-				BDCA25F421B33C1300E8C3FE /* Main.storyboard in Resources */,
+				BD65F2EE21B42D5B00A8DB61 /* Breeds.storyboard in Resources */,
+				BD5F7A1C21B44DAA00140F16 /* Dogs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +650,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DDA65F635945C33E8E200C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IDdog/Pods-IDdog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IDdog/Pods-IDdog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EF932B87BD573D061A13BDB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,9 +703,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDCA25F121B33C1300E8C3FE /* ViewController.swift in Sources */,
+				BDCA264021B38F6500E8C3FE /* KeychainManager.swift in Sources */,
+				BD5F7A1E21B44DAA00140F16 /* DogsRouter.swift in Sources */,
+				BD5F7A2821B44E2B00140F16 /* DogCell.swift in Sources */,
+				BD65F2F221B42D5B00A8DB61 /* BreedsInteractor.swift in Sources */,
+				BD65F2F021B42D5B00A8DB61 /* BreedsRouter.swift in Sources */,
 				BDCA25F721B33C1300E8C3FE /* IDdog.xcdatamodeld in Sources */,
+				BD65F2F121B42D5B00A8DB61 /* BreedsProtocols.swift in Sources */,
+				BDCA262121B357C600E8C3FE /* Result.swift in Sources */,
+				BDCA262721B375FD00E8C3FE /* SignUpRequest.swift in Sources */,
+				BDCA261F21B3567E00E8C3FE /* DogAPIClient.swift in Sources */,
+				BDCA262C21B3774E00E8C3FE /* User.swift in Sources */,
+				BD5F7A1F21B44DAA00140F16 /* DogsProtocols.swift in Sources */,
+				BD65F2D521B39F5300A8DB61 /* LoginRouter.swift in Sources */,
+				BDCA263221B37A6B00E8C3FE /* Dog.swift in Sources */,
+				BD65F2DE21B3A87F00A8DB61 /* UIViewController+Extension.swift in Sources */,
+				BD65F2FC21B4304F00A8DB61 /* UIView+Extensions.swift in Sources */,
+				BD65F2D721B39F5300A8DB61 /* LoginInteractor.swift in Sources */,
+				BD65F2D621B39F5300A8DB61 /* LoginProtocols.swift in Sources */,
+				BD5F7A2121B44DAA00140F16 /* DogsView.swift in Sources */,
+				BD65F2FA21B42ED200A8DB61 /* BreedsCell.swift in Sources */,
+				BDCA261B21B3555400E8C3FE /* APIRequest.swift in Sources */,
+				BDCA263E21B38F0F00E8C3FE /* UserDAO.swift in Sources */,
+				BD65F2D421B39F5300A8DB61 /* LoginPresenter.swift in Sources */,
+				BD65F2F321B42D5B00A8DB61 /* BreedsView.swift in Sources */,
+				BD5F7A2D21B4606000140F16 /* DogDetailView.swift in Sources */,
 				BDCA25EF21B33C1300E8C3FE /* AppDelegate.swift in Sources */,
+				BDCA263021B3794800E8C3FE /* DogBreed.swift in Sources */,
+				BDCA264A21B397C000E8C3FE /* DogsDAO.swift in Sources */,
+				BD5F7A1D21B44DAA00140F16 /* DogsPresenter.swift in Sources */,
+				BD65F2D821B39F5300A8DB61 /* LoginView.swift in Sources */,
+				BD65F2EF21B42D5B00A8DB61 /* BreedsPresenter.swift in Sources */,
+				BDCA262321B35A3B00E8C3FE /* DogError.swift in Sources */,
+				BD5F7A2021B44DAA00140F16 /* DogsInteractor.swift in Sources */,
+				BDCA262E21B378C500E8C3FE /* DogRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +744,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5F7A3021B49CCE00140F16 /* BreedsModuleTests.swift in Sources */,
+				BD5F7A3221B4A20500140F16 /* DogsModuleTests.swift in Sources */,
+				BDCA264D21B39A3200E8C3FE /* DogsDAOTests.swift in Sources */,
+				BD65F2E621B41F5600A8DB61 /* UIApplication+Extension.swift in Sources */,
+				BDCA263A21B389BC00E8C3FE /* DogRequestTest.swift in Sources */,
 				BDCA260721B33C1400E8C3FE /* IDdogTests.swift in Sources */,
+				BD65F2E421B4166D00A8DB61 /* LoginModuleTests.swift in Sources */,
+				BDCA263621B37B3D00E8C3FE /* SignUpRequestTest.swift in Sources */,
+				BDCA264621B3937400E8C3FE /* UserDAOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +767,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BDCA25F221B33C1300E8C3FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BDCA25F321B33C1300E8C3FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BDCA25FA21B33C1400E8C3FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +901,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = IDdog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +920,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = IDdog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

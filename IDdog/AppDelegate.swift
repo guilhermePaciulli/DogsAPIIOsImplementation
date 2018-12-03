@@ -16,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if UserDAO.shared.fetchUser() == nil {
+            let router = LoginRouter()
+            router.presentAsRoot(self.window!)
+            self.window!.makeKeyAndVisible()
+        } else {
+            let router = BreedsRouter()
+            router.presentAsRoot(self.window!)
+            self.window!.makeKeyAndVisible()
+        }
+
         return true
     }
 

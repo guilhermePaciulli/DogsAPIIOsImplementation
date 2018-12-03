@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View-->
+        <scene sceneID="0yJ-gf-T5z">
+            <objects>
+                <viewController storyboardIdentifier="LoginView" id="2aj-bM-ixw" customClass="LoginView" customModule="IDdog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zIR-mc-HJo"/>
+                        <viewControllerLayoutGuide type="bottom" id="VJw-nr-gPZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T0n-7X-0uE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-0S-fnI">
+                                <rect key="frame" x="100" y="40" width="175" height="177"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWg-qf-c8f">
+                                <rect key="frame" x="50" y="338" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insira um e-mail válido para se cadastrar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPs-Lc-NUa">
+                                <rect key="frame" x="50" y="247" width="275" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOS-q2-iuP">
+                                <rect key="frame" x="50" y="440" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.84888601303100586" green="0.0" blue="0.15352267026901245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Confirmar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressToConfirmButton:" destination="2aj-bM-ixw" eventType="touchUpInside" id="ee5-Qr-f9K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EOS-q2-iuP" firstAttribute="top" secondItem="NWg-qf-c8f" secondAttribute="bottom" constant="72" id="2tB-VI-gUW"/>
+                            <constraint firstItem="NWg-qf-c8f" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" constant="50" id="AlZ-gP-XIg"/>
+                            <constraint firstItem="NWg-qf-c8f" firstAttribute="top" secondItem="hPs-Lc-NUa" secondAttribute="bottom" constant="50" id="Bmb-5C-q8O"/>
+                            <constraint firstItem="VJw-nr-gPZ" firstAttribute="top" secondItem="hmv-0S-fnI" secondAttribute="bottom" constant="450" id="Naf-xu-ARh"/>
+                            <constraint firstAttribute="trailing" secondItem="hmv-0S-fnI" secondAttribute="trailing" constant="100" id="Oom-Fh-uwc"/>
+                            <constraint firstItem="EOS-q2-iuP" firstAttribute="trailing" secondItem="NWg-qf-c8f" secondAttribute="trailing" id="Uqj-YC-vBh"/>
+                            <constraint firstItem="EOS-q2-iuP" firstAttribute="height" secondItem="NWg-qf-c8f" secondAttribute="height" id="amh-Br-T8b"/>
+                            <constraint firstItem="hmv-0S-fnI" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" constant="100" id="fzL-1a-kDB"/>
+                            <constraint firstItem="hPs-Lc-NUa" firstAttribute="top" secondItem="hmv-0S-fnI" secondAttribute="bottom" constant="30" id="hjj-BJ-ab7"/>
+                            <constraint firstAttribute="trailing" secondItem="hPs-Lc-NUa" secondAttribute="trailing" constant="50" id="ppA-gE-ygn"/>
+                            <constraint firstAttribute="trailing" secondItem="NWg-qf-c8f" secondAttribute="trailing" constant="50" id="r5W-EC-UBz"/>
+                            <constraint firstItem="EOS-q2-iuP" firstAttribute="leading" secondItem="NWg-qf-c8f" secondAttribute="leading" id="we5-Mi-mfY"/>
+                            <constraint firstItem="hmv-0S-fnI" firstAttribute="top" secondItem="zIR-mc-HJo" secondAttribute="bottom" constant="20" id="yf8-Jl-DFb"/>
+                            <constraint firstItem="hPs-Lc-NUa" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" constant="50" id="zPz-AT-gqN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="EOS-q2-iuP" id="tqX-uU-AZc"/>
+                        <outlet property="emailTextField" destination="NWg-qf-c8f" id="aln-FX-4AF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxF-vk-lxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pawprint" width="512" height="512"/>
+    </resources>
+</document>

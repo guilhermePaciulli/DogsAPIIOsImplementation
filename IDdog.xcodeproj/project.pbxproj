@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B64D58B56EF3E5ACA3DE3A4 /* Pods_IDdogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C15F99A4BE262A473680659 /* Pods_IDdogUITests.framework */; };
 		749F2CB0D31EF00F15FA9C4F /* Pods_IDdog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */; };
 		A328EA0F2226D58200870703 /* XCUIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328EA0E2226D58200870703 /* XCUIApplication+Extension.swift */; };
 		A328EA122226D62000870703 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328EA112226D62000870703 /* LoginTests.swift */; };
@@ -82,8 +83,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C15F99A4BE262A473680659 /* Pods_IDdogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		352A4FAF14A14594FD203E3F /* Pods-IDdogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogUITests/Pods-IDdogUITests.release.xcconfig"; sourceTree = "<group>"; };
 		39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.release.xcconfig"; sourceTree = "<group>"; };
+		4568826D53224953D0377A82 /* Pods-IDdogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogUITests/Pods-IDdogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A328EA042226D27900870703 /* IDdogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDdogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B64D58B56EF3E5ACA3DE3A4 /* Pods_IDdogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +188,8 @@
 				EDE8FDEF72AC523FB1DBEB72 /* Pods-IDdog.release.xcconfig */,
 				755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */,
 				39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */,
+				4568826D53224953D0377A82 /* Pods-IDdogUITests.debug.xcconfig */,
+				352A4FAF14A14594FD203E3F /* Pods-IDdogUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -571,6 +578,7 @@
 			children = (
 				508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */,
 				12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */,
+				0C15F99A4BE262A473680659 /* Pods_IDdogUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -582,9 +590,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A328EA0D2226D27900870703 /* Build configuration list for PBXNativeTarget "IDdogUITests" */;
 			buildPhases = (
+				8125946833FD3A7C5A45A0CA /* [CP] Check Pods Manifest.lock */,
 				A328EA002226D27900870703 /* Sources */,
 				A328EA012226D27900870703 /* Frameworks */,
 				A328EA022226D27900870703 /* Resources */,
+				3F91E6DD2CF9DD2114343D49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -623,6 +633,7 @@
 				BDCA25FE21B33C1400E8C3FE /* Sources */,
 				BDCA25FF21B33C1400E8C3FE /* Frameworks */,
 				BDCA260021B33C1400E8C3FE /* Resources */,
+				95F4247D7C1839E16FCAADAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -729,6 +740,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F91E6DD2CF9DD2114343D49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IDdogUITests/Pods-IDdogUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IDdogUITests/Pods-IDdogUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8125946833FD3A7C5A45A0CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDdogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F4247D7C1839E16FCAADAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DDA65F635945C33E8E200C26 /* [CP] Embed Pods Frameworks */ = {
@@ -876,6 +953,7 @@
 /* Begin XCBuildConfiguration section */
 		A328EA0B2226D27900870703 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4568826D53224953D0377A82 /* Pods-IDdogUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAHQSQBM8P;
@@ -895,6 +973,7 @@
 		};
 		A328EA0C2226D27900870703 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352A4FAF14A14594FD203E3F /* Pods-IDdogUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAHQSQBM8P;
@@ -915,6 +994,7 @@
 		BDCA260921B33C1400E8C3FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -976,6 +1056,7 @@
 		BDCA260A21B33C1400E8C3FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1070,7 +1151,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAHQSQBM8P;
@@ -1092,7 +1172,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAHQSQBM8P;

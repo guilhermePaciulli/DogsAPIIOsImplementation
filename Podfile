@@ -12,6 +12,13 @@ target 'IDdog' do
   target 'IDdogTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'OHHTTPStubs/Swift'
+  end
+
+  target 'IDdogUITests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'OHHTTPStubs/Swift'
   end
 
 end

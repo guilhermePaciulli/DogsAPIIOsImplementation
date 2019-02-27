@@ -29,12 +29,12 @@ class LoginTests: XCUITestCase {
         
         let expectation = self.expectation(description: "to log in")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             XCTAssertTrue(self.app.isDisplayingBreedsView)
             expectation.fulfill()
         })
         
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 1, handler: nil)
     }
 
 }

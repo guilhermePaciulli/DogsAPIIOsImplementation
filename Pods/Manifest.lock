@@ -1,20 +1,36 @@
 PODS:
   - Hero (1.4.0)
   - Kingfisher (4.10.1)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
 
 DEPENDENCIES:
   - Hero
   - Kingfisher (~> 4.0)
+  - OHHTTPStubs/Swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Hero
     - Kingfisher
+    - OHHTTPStubs
 
 SPEC CHECKSUMS:
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
 
-PODFILE CHECKSUM: 9ad360529e041fac1c363bf12c9b9ce5d7441206
+PODFILE CHECKSUM: f93a9052e64b4ff378721469b22e9cde465e5133
 
 COCOAPODS: 1.5.3

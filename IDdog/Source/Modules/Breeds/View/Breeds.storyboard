@@ -64,6 +64,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="BreedsView"/>
                         <constraints>
                             <constraint firstItem="Efi-2N-mVn" firstAttribute="top" secondItem="T0n-7X-0uE" secondAttribute="top" id="DF0-fn-01s"/>
                             <constraint firstItem="Efi-2N-mVn" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" id="KSQ-Q8-GE1"/>

@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        UserDAO.shared.clearUserFromKeyChain()
+        
         if UserDAO.shared.fetchUser() == nil {
             let router = LoginRouter()
             router.presentAsRoot(self.window!)

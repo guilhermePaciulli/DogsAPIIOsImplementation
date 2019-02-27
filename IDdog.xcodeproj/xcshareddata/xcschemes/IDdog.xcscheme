@@ -39,6 +39,16 @@
                ReferencedContainer = "container:IDdog.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A328EA032226D27900870703"
+               BuildableName = "IDdogUITests.xctest"
+               BlueprintName = "IDdogUITests"
+               ReferencedContainer = "container:IDdog.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

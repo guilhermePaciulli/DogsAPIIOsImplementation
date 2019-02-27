@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		749F2CB0D31EF00F15FA9C4F /* Pods_IDdog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */; };
+		A328EA0F2226D58200870703 /* XCUIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328EA0E2226D58200870703 /* XCUIApplication+Extension.swift */; };
+		A328EA122226D62000870703 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328EA112226D62000870703 /* LoginTests.swift */; };
+		A328EA152226D65700870703 /* XCUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A328EA142226D65700870703 /* XCUITestCase.swift */; };
 		A9F0D6DFEDA6322DBA1E1F62 /* Pods_IDdogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BFF23C16D6ED95E91619EA /* Pods_IDdogTests.framework */; };
 		BD5F7A1C21B44DAA00140F16 /* Dogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */; };
 		BD5F7A1D21B44DAA00140F16 /* DogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F7A1721B44DAA00140F16 /* DogsPresenter.swift */; };
@@ -62,6 +65,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A328EA092226D27900870703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDCA25E321B33C1200E8C3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDCA25EA21B33C1300E8C3FE;
+			remoteInfo = IDdog;
+		};
 		BDCA260321B33C1400E8C3FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDCA25E321B33C1200E8C3FE /* Project object */;
@@ -76,6 +86,11 @@
 		39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.release.xcconfig"; sourceTree = "<group>"; };
 		508AFBCBEFD16726C8AD0870 /* Pods_IDdog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDdog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755C83BCB70A56FE07B233DE /* Pods-IDdogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDdogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDdogTests/Pods-IDdogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A328EA042226D27900870703 /* IDdogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDdogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A328EA082226D27900870703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A328EA0E2226D58200870703 /* XCUIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Extension.swift"; sourceTree = "<group>"; };
+		A328EA112226D62000870703 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		A328EA142226D65700870703 /* XCUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestCase.swift; sourceTree = "<group>"; };
 		BD5F7A1621B44DAA00140F16 /* Dogs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dogs.storyboard; sourceTree = "<group>"; };
 		BD5F7A1721B44DAA00140F16 /* DogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPresenter.swift; sourceTree = "<group>"; };
 		BD5F7A1821B44DAA00140F16 /* DogsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRouter.swift; sourceTree = "<group>"; };
@@ -135,6 +150,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A328EA012226D27900870703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDCA25E821B33C1300E8C3FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +185,33 @@
 				39051AEAF15FB8843951B665 /* Pods-IDdogTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A328EA052226D27900870703 /* IDdogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A328EA082226D27900870703 /* Info.plist */,
+				A328EA132226D62600870703 /* Flows Tests */,
+				A328EA102226D58A00870703 /* Utils */,
+			);
+			path = IDdogUITests;
+			sourceTree = "<group>";
+		};
+		A328EA102226D58A00870703 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A328EA0E2226D58200870703 /* XCUIApplication+Extension.swift */,
+				A328EA142226D65700870703 /* XCUITestCase.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A328EA132226D62600870703 /* Flows Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A328EA112226D62000870703 /* LoginTests.swift */,
+			);
+			path = "Flows Tests";
 			sourceTree = "<group>";
 		};
 		BD5F7A2221B44DAD00140F16 /* Dogs */ = {
@@ -351,6 +400,7 @@
 			children = (
 				BDCA25ED21B33C1300E8C3FE /* IDdog */,
 				BDCA260521B33C1400E8C3FE /* IDdogTests */,
+				A328EA052226D27900870703 /* IDdogUITests */,
 				BDCA25EC21B33C1300E8C3FE /* Products */,
 				4AB50D88B39E57B1FD2445A9 /* Pods */,
 				E5027C8C1CEF8A72D8323FF5 /* Frameworks */,
@@ -362,6 +412,7 @@
 			children = (
 				BDCA25EB21B33C1300E8C3FE /* IDdog.app */,
 				BDCA260221B33C1400E8C3FE /* IDdogTests.xctest */,
+				A328EA042226D27900870703 /* IDdogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -527,6 +578,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A328EA032226D27900870703 /* IDdogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A328EA0D2226D27900870703 /* Build configuration list for PBXNativeTarget "IDdogUITests" */;
+			buildPhases = (
+				A328EA002226D27900870703 /* Sources */,
+				A328EA012226D27900870703 /* Frameworks */,
+				A328EA022226D27900870703 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A328EA0A2226D27900870703 /* PBXTargetDependency */,
+			);
+			name = IDdogUITests;
+			productName = IDdogUITests;
+			productReference = A328EA042226D27900870703 /* IDdogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BDCA25EA21B33C1300E8C3FE /* IDdog */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDCA260B21B33C1400E8C3FE /* Build configuration list for PBXNativeTarget "IDdog" */;
@@ -575,6 +644,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Guilherme Paciulli";
 				TargetAttributes = {
+					A328EA032226D27900870703 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BDCA25EA21B33C1300E8C3FE;
+					};
 					BDCA25EA21B33C1300E8C3FE = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -599,11 +672,19 @@
 			targets = (
 				BDCA25EA21B33C1300E8C3FE /* IDdog */,
 				BDCA260121B33C1400E8C3FE /* IDdogTests */,
+				A328EA032226D27900870703 /* IDdogUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A328EA022226D27900870703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDCA25E921B33C1300E8C3FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -699,6 +780,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A328EA002226D27900870703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A328EA152226D65700870703 /* XCUITestCase.swift in Sources */,
+				A328EA122226D62000870703 /* LoginTests.swift in Sources */,
+				A328EA0F2226D58200870703 /* XCUIApplication+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDCA25E721B33C1300E8C3FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -759,6 +850,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A328EA0A2226D27900870703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDCA25EA21B33C1300E8C3FE /* IDdog */;
+			targetProxy = A328EA092226D27900870703 /* PBXContainerItemProxy */;
+		};
 		BDCA260421B33C1400E8C3FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BDCA25EA21B33C1300E8C3FE /* IDdog */;
@@ -778,6 +874,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A328EA0B2226D27900870703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAHQSQBM8P;
+				INFOPLIST_FILE = IDdogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = poc.Coordinators.Test.IDdogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IDdog;
+			};
+			name = Debug;
+		};
+		A328EA0C2226D27900870703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAHQSQBM8P;
+				INFOPLIST_FILE = IDdogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = poc.Coordinators.Test.IDdogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IDdog;
+			};
+			name = Release;
+		};
 		BDCA260921B33C1400E8C3FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -900,7 +1034,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VLLH384AC4;
+				DEVELOPMENT_TEAM = PAHQSQBM8P;
 				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -919,7 +1053,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VLLH384AC4;
+				DEVELOPMENT_TEAM = PAHQSQBM8P;
 				INFOPLIST_FILE = "$(SRCROOT)/IDdog/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -939,7 +1073,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VLLH384AC4;
+				DEVELOPMENT_TEAM = PAHQSQBM8P;
 				INFOPLIST_FILE = IDdogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -961,7 +1095,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VLLH384AC4;
+				DEVELOPMENT_TEAM = PAHQSQBM8P;
 				INFOPLIST_FILE = IDdogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -979,6 +1113,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A328EA0D2226D27900870703 /* Build configuration list for PBXNativeTarget "IDdogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A328EA0B2226D27900870703 /* Debug */,
+				A328EA0C2226D27900870703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BDCA25E621B33C1200E8C3FE /* Build configuration list for PBXProject "IDdog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
